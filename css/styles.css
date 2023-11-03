@@ -1,26 +1,57 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1a1a1a;
   color: #f2f2f2;
   text-align: center;
+  padding: 20px;
 }
 
-.background-image {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: -1;
+.chara_banner {
+  position: relative;
+  width: 680px;
+  height: 200px;
+  margin: 0 auto 20px;
 }
 
-.background-image img {
+.chara_banner img {
   width: 100%;
-  height: auto;
-  opacity: 0.3;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 h1 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 20px 0;
+  margin: 0;
+  font-size: 24px;
+}
+
+h2 {
   color: #f2f2f2;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+li:last-child {
+  margin-bottom: 0;
 }
 
 .character-list {
@@ -34,9 +65,10 @@ h1 {
   margin: 20px;
   padding: 20px;
   width: 200px;
-  background-color: #444;
+  background-color: #555;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s;
 }
 
 .character a {
@@ -57,12 +89,19 @@ h1 {
   font-weight: bold;
   position: relative;
   z-index: 1;
+  font-size: 20px;
 }
 
 .attribute-icon {
   position: absolute;
-  width: 150px; /* Adjusted width */
+  width: 150px;
   bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+/* Optional hover effect */
+.character:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
