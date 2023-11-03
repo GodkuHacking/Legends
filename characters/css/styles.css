@@ -1,19 +1,21 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #333;
+  font-family: 'Arial', sans-serif;
+  background-color: #222;
   color: #f2f2f2;
   text-align: center;
   padding: 20px;
+  margin: 0;
 }
 
 .chara_banner {
   position: relative;
-  width: 680px;
+  width: 100%;
+  max-width: 680px;
   height: 200px;
-  margin: 0 auto 20px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  margin: 0 auto 40px;
+  border-radius: 5px;
   overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 .chara_banner img {
@@ -27,7 +29,7 @@ h1 {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
   padding: 20px 0;
   margin: 0;
@@ -62,13 +64,13 @@ li:last-child {
 .tags li {
   display: flex;
   align-items: center;
-  margin: 5px;
+  margin: 10px;
 }
 
 .tags li img {
   height: 20px;
   width: 20px;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .character-list {
@@ -81,10 +83,11 @@ li:last-child {
   position: relative;
   margin: 20px;
   padding: 20px;
-  width: 200px;
-  background-color: #444;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  width: 250px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
 }
 
 .character a {
@@ -94,11 +97,11 @@ li:last-child {
 }
 
 .character img {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
-  border-radius: 5px;
-  margin-bottom: 15px;
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
 
 .character-name {
@@ -109,7 +112,7 @@ li:last-child {
 
 .attribute-icon {
   position: absolute;
-  width: 150px;
+  width: 180px;
   bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
