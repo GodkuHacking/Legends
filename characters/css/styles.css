@@ -3,24 +3,28 @@ body {
   background-color: #333;
   color: #f2f2f2;
   text-align: center;
+  padding: 20px;
 }
 
-.background-image {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: -1;
-}
-
-.background-image img {
-  width: 100%;
-  height: auto;
-  opacity: 0.3;
-}
-
-h1 {
+h1, h2 {
   color: #f2f2f2;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-top: 20px;
 }
 
 .character-list {
