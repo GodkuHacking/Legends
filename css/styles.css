@@ -29,13 +29,13 @@ h1 {
 }
 
 .character {
+  position: relative;
   margin: 20px;
   padding: 20px;
   width: 200px;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: relative;
 }
 
 .character a {
@@ -48,19 +48,20 @@ h1 {
   width: 150px;
   height: 150px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 5px;
   margin-bottom: 15px;
 }
 
 .character-name {
   font-weight: bold;
+  position: relative;
+  z-index: 1;
 }
 
 .attribute-icon {
   position: absolute;
-  bottom: 5px;
+  width: 150px; /* Adjusted width */
+  bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
-  width: 150px; /* Adjusted width */
-  height: auto;
 }
