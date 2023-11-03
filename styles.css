@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+.character-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.character {
+  margin: 20px;
+  padding: 20px;
+  width: 200px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.character a {
+  text-decoration: none;
+  color: #333;
+}
+
+.character img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.character-name {
+  font-weight: bold;
+}
+
+/* Optional hover effect */
+.character:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
