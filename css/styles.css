@@ -4,6 +4,20 @@ body {
   text-align: center;
 }
 
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.background-image img {
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+}
+
 h1 {
   color: #333;
 }
