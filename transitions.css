@@ -1,0 +1,25 @@
+.fade-transition {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transition: opacity 1s ease;
+}
+
+@keyframes fadeloop2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.trs0 {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
