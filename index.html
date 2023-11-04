@@ -110,6 +110,27 @@
 
   </div>
 
-</body>
+  <img class="fade-transition" id="gamma" src="https://i.imgur.com/Zpw7jG0.png" style="opacity: 1;">
 
-</html>
+  <div class="character">
+    <img src="path_to_gamma1_image" alt="Gamma 1">
+    <p class="character-name">Gamma 1</p>
+  </div>
+
+  <script>
+    window.onload = function() {
+      const gamma = document.getElementById('gamma');
+
+      const images = ["https://i.imgur.com/Zpw7jG0.png", "https://i.imgur.com/3glBI1r.png"];
+      let currentImageIndex = 0;
+
+      const switchImage = () => {
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        gamma.src = images[currentImageIndex];
+      };
+
+      setInterval(switchImage, 5000);
+    };
+  </script>
+
+</body>
