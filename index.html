@@ -21,190 +21,3393 @@
 
 
 
-  <div class="character-list">
-
-    <div class="character">
-      <a href="characters/572.html">
-        <img src="images/characters/front/572.png" alt="Super Janemba">
-        <p class="character-name">Super Janemba</p>
-      </a>
-    </div>
-
-
-    <div class="character">
-       <a href="characters/554.html">
-         <img src="images/characters/front/554.png" alt="UVB (569)">
-         <p class="character-name">Super Saiyan God SS Vegito</p>
-       </a>
-    </div>
-
-    <div class="character">
-       <a href="characters/538.html">
-         <img src="images/characters/front/538.png" alt="UKB">
-         <p class="character-name">Kid Buu</p>
-       </a>
-    </div>
-
-    <div class="character">
-       <a href="characters/532.html">
-         <img src="images/characters/front/532.png" alt="URG">
-         <p class="character-name">Super Saiyan Rose Goku Black</p>
-       </a>
-    </div>
-
-    <div class="character">
-       <a href="characters/511.html">
-         <img src="images/characters/front/511.png" alt="UL Hit">
-         <p class="character-name">Hit</p>
-       </a>
-    </div>
-
-    <div class="character">
-       <a href="characters/508.html">
-         <img src="images/characters/front/508.png" alt="UGB">
-         <p class="character-name">Super Saiyan God SS Gogeta</p>
-       </a>
-    </div>
-
-    <div class="character">
-       <a href="characters/495.html">
-         <img src="images/characters/front/495.png" alt="UL Broly">
-         <p class="character-name">Legendary Super Saiyan Broly</p>
-       </a>
-    </div>
-
-    <div class="character">
-       <a href="characters/487.html">
-         <img src="images/characters/front/487.png" alt="USV">
-         <p class="character-name">Super Vegito</p>
-       </a>
-    </div>
-
-    <div class="character">
-       <a href="characters/571.html">
-         <img src="images/characters/front/571.png" alt="Hero Tapion">
-         <p class="character-name">Hero Tapion</p>
-       </a>
-    </div>
-    
-    <div class="character">
-       <a href="characters/570.html">
-         <img src="images/characters/front/570.png" alt="Demon King Piccolo">
-         <p class="character-name">Demon King Piccolo</p>
-       </a>
-    </div>
-
-    <div class="character">
-       <a href="characters/569.html">
-         <img src="images/characters/front/569.png" alt="Piccolo Jr. (569)">
-         <p class="character-name">Piccolo Jr.</p>
-       </a>
-    </div>
-
-    <div class="character">
-       <a href="characters/568.html">
-         <img src="images/characters/front/568.png" alt="Piccolo Jr. (569)">
-         <p class="character-name">Goku</p>
-       </a>
-    </div>
-
-    <div class="character">
-       <a href="characters/567.html">
-         <img src="images/characters/front/567.png" alt="Master Roshi">
-         <p class="character-name">Master Roshi</p>
-       </a>
-    </div>
-
-    <div class="character">
-       <a href="characters/566.html">
-         <img src="images/characters/front/566.png" alt="Android #8">
-         <p class="character-name">Android #8</p>
-       </a>
-    </div>
-
-<div class="character">
-  <img class="fade-transition trs0 gohan" id="gohan" src="https://pbs.twimg.com/media/F4x60_HWwAAuJrt?format=png&name=4096x4096" style="opacity: 1;">
-  <a href="characters/564.html">
-    <p class="character-name">Gohan (Kid) & Krillin</p>
-  </a>
-</div>
-
-<script>
-  window.onload = function() {
-    const gohan = document.getElementById('gohan');
-
-    const images = ["https://i.imgur.com/vq0dg2d.png", "https://i.imgur.com/vKO7CwJ.png"];
-    let currentImageIndex = 0;
-
-    const switchImage = () => {
-      currentImageIndex = (currentImageIndex + 1) % images.length;
-      gohan.style.opacity = 0;
-      setTimeout(() => {
-        gohan.src = images[currentImageIndex];
-        gohan.style.opacity = 1;
-      }, 500);
-    };
-
-    setInterval(switchImage, 5000);
-  };
-</script>
-
-
-    <div class="character">
-       <a href="characters/432.html">
-         <img src="images/characters/front/432.png" alt="Android #8">
-         <p class="character-name">Perfect Cell</p>
-       </a>
-    </div>
-
-    <div class="character">
-       <a href="characters/500.html">
-         <img src="images/characters/front/500.png" alt="Android #8">
-         <p class="character-name">Pan</p>
-       </a>
-    </div>
-
-    <div class="character">
-       <a href="characters/565.html">
-         <img src="images/characters/front/565.png" alt="Goku (Youth) (569)">
-         <p class="character-name">Goku (Youth)</p>
-       </a>
-    </div>
-
-<div class="character">
-       <a href="characters/491.html">
-         <img src="images/characters/front/491.png" alt="Beast Gohan (491)">
-         <p class="character-name">Beast Gohan</p>
-       </a>
-    </div>
-
-<div class="character">
-   <a href="characters/549.html">
-    <img class="fade-transition trs0" id="gamma" src="https://i.imgur.com/Zpw7jG0.png" style="opacity: 1;">
-   <p class="character-name">Gamma 1 & Gamma 2</p>
-  </a>
-</div>
-
-
-  </div>
-
-  <script>
-    window.onload = function() {
-      const gamma = document.getElementById('gamma');
-
-      const images = ["https://i.imgur.com/Zpw7jG0.png", "https://i.imgur.com/3glBI1r.png"];
-      let currentImageIndex = 0;
-
-      const switchImage = () => {
-        currentImageIndex = (currentImageIndex + 1) % images.length;
-        gamma.src = images[currentImageIndex];
-      };
-
-      setInterval(switchImage, 5000);
-    };
-  </script>
-
-
-  </div>
-
-</body>
+<div class="chara list">
+											<a class="icon a4" href="/characters/572" title="Super Janemba - DBL64-01U">
+														<img class="trs0" src="https://i.imgur.com/Bn75A3q.png" transform="">
+														<div class="ot rarity rs3"></div>
+							<div class="ot over">Super Janemba</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/554" title="Super Saiyan God SS Vegito - DBL61-01U">
+														<img class="trs0" src="https://i.imgur.com/LlGbITa.png" transform="">
+														<div class="ot rarity rs3"></div>
+							<div class="ot over">Super Saiyan God SS Vegito</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/495" title="Legendary Super Saiyan Broly - DBL51-03U">
+														<img class="trs0" src="https://i.imgur.com/hICURNV.png" transform="">
+														<div class="ot rarity rs3"></div>
+							<div class="ot over">Legendary Super Saiyan Broly</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/487" title="Super Vegito - DBL49-01U">
+														<img class="trs0" src="https://i.imgur.com/xHLbkw2.png" transform="">
+														<div class="ot rarity rs3"></div>
+							<div class="ot over">Super Vegito</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/538" title="Buu: Kid - DBL58-03U">
+														<img class="trs0" src="https://i.imgur.com/6Rs86Wn.png" transform="">
+														<div class="ot rarity rs3"></div>
+							<div class="ot over">Buu: Kid</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/511" title="Hit - DBL55-03U">
+														<img class="trs0" src="https://i.imgur.com/XjL4Xbf.png" transform="">
+														<div class="ot rarity rs3"></div>
+							<div class="ot over">Hit</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/468" title="Super Saiyan God SS Kaioken Goku - DBL45-01U">
+														<img class="trs0" src="https://i.imgur.com/NFhSG5c.png" transform="">
+														<div class="ot rarity rs3"></div>
+							<div class="ot over">Super Saiyan God SS Kaioken Goku</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/532" title="Super Saiyan Rosé Goku Black - DBL57-01U">
+														<img class="trs0" src="https://i.imgur.com/ikzcWnN.png" transform="">
+														<div class="ot rarity rs3"></div>
+							<div class="ot over">Super Saiyan Rosé Goku Black</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/508" title="Super Saiyan God SS Gogeta - DBL54-05U">
+														<img class="trs0" src="https://i.imgur.com/AF3GV1T.png" transform="">
+														<div class="ot rarity rs3"></div>
+							<div class="ot over">Super Saiyan God SS Gogeta</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/454" title="Super Gogeta - DBL42-01U">
+														<img class="trs0" src="https://i.imgur.com/OfvZVup.png" transform="">
+														<div class="ot rarity rs3"></div>
+							<div class="ot over">Super Gogeta</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/400" title="Vegeta - DBL-EVT-24U">
+														<img class="trs0" src="https://i.imgur.com/TtjSaMu.png" transform="">
+														<div class="ot rarity rs3"></div>
+							<div class="ot over">Vegeta</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/385" title="Super Saiyan Goku - DBL-EVT-17U">
+														<img class="trs0" src="https://i.imgur.com/BXDAf5A.png" transform="">
+														<div class="ot rarity rs3"></div>
+							<div class="ot over">Super Saiyan Goku</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/443" title="Omega Shenron - DBL-EVT-38U">
+														<img class="trs0" src="https://i.imgur.com/weSBfYl.png" transform="">
+														<div class="ot rarity rs3"></div>
+							<div class="ot over">Omega Shenron</div>
+																					
+						</a>
+											<a class="icon a4 ll" href="/characters/510" title="Android #17 - DBL55-01S">
+														<img class="trs0" src="https://i.imgur.com/GYVEomA.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Android #17</div>
+														<div class="ot limited">Legends Limited</div>
+																					
+						</a>
+											<a class="icon a2 ll" href="/characters/539" title="Goku &amp; Final Form Frieza - DBL59-01S">
+														<img class="trs0 fadeloop2" src="https://i.imgur.com/hGg8jjO.png" transform="VAfp2RA"><img class="trs0 transform fadeloop" src="https://i.imgur.com/VAfp2RA.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Goku &amp; Final Form Frieza</div>
+														<div class="ot limited">Legends Limited</div>
+																					
+						</a>
+											<a class="icon a4 ll" href="/characters/491" title="Beast Gohan - DBL52-01S">
+														<img class="trs0" src="https://i.imgur.com/qemLpSj.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Beast Gohan</div>
+														<div class="ot limited">Legends Limited</div>
+																					
+						</a>
+											<a class="icon a2 ll" href="/characters/555" title="Perfect Form Cell - DBL61-03S">
+														<img class="trs0" src="https://i.imgur.com/kAqiAAe.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Perfect Form Cell</div>
+														<div class="ot limited">Legends Limited</div>
+																					
+						</a>
+											<a class="icon a4 ll" href="/characters/563" title="Super Saiyan Goku - DBL62-04S">
+														<img class="trs0" src="https://i.imgur.com/RNbrg8p.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Goku</div>
+														<div class="ot limited">Legends Limited</div>
+																					
+						</a>
+											<a class="icon a1 ll" href="/characters/549" title="Gamma 1 &amp; Gamma 2 - DBL60-03S">
+														<img class="trs0 fadeloop2" src="https://i.imgur.com/3glBI1r.png" transform="Zpw7jG0"><img class="trs0 transform fadeloop" src="https://i.imgur.com/Zpw7jG0.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Gamma 1 &amp; Gamma 2</div>
+														<div class="ot limited">Legends Limited</div>
+																					
+						</a>
+											<a class="icon a2 ll" href="/characters/565" title="Goku (Youth) - DBL63-01S">
+														<img class="trs0" src="https://i.imgur.com/ZvcSvhe.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Goku (Youth)</div>
+														<div class="ot limited">Legends Limited</div>
+																					
+						</a>
+											<a class="icon a4 ll" href="/characters/536" title="Super Saiyan 3 &amp; Super Saiyan 2 Goku &amp; Vegeta - DBL58-01S">
+														<img class="trs0 fadeloop2" src="https://i.imgur.com/ELFvbI4.png" transform="ftu6Y1T"><img class="trs0 transform fadeloop" src="https://i.imgur.com/ftu6Y1T.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan 3 &amp; Super Saiyan 2 Goku &amp; Vegeta</div>
+														<div class="ot limited">Legends Limited</div>
+																					
+						</a>
+											<a class="icon a0 ll" href="/characters/477" title="Ultra Instinct Goku - DBL47-01S">
+														<img class="trs0" src="https://i.imgur.com/mmVctfP.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Ultra Instinct Goku</div>
+														<div class="ot limited">Legends Limited</div>
+																					
+						</a>
+											<a class="icon a3 ll" href="/characters/501" title="Super Saiyan 4 Goku &amp; Vegeta - DBL53-01S">
+														<img class="trs0 fadeloop2" src="https://i.imgur.com/YgsARPJ.png" transform="R7lH3IG"><img class="trs0 transform fadeloop" src="https://i.imgur.com/R7lH3IG.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan 4 Goku &amp; Vegeta</div>
+														<div class="ot limited">Legends Limited</div>
+																					
+						</a>
+											<a class="icon a1 ll" href="/characters/514" title="Super Saiyan 2 &amp; Super Saiyan God SS Trunks (Adult) &amp; Vegeta - DBL54-03S">
+														<img class="trs0 fadeloop2" src="https://i.imgur.com/H5PbPBz.png" transform="BKVYzHJ"><img class="trs0 transform fadeloop" src="https://i.imgur.com/BKVYzHJ.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan 2 &amp; Super Saiyan God SS Trunks (Adult) &amp; Vegeta</div>
+														<div class="ot limited">Legends Limited</div>
+																					
+						</a>
+											<a class="icon a0 ll" href="/characters/472" title="Android #17 &amp; Android #18 - DBL46-01S">
+														<img class="trs0 fadeloop2" src="https://i.imgur.com/6A3VFtU.png" transform="JTiOoaH"><img class="trs0 transform fadeloop" src="https://i.imgur.com/JTiOoaH.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Android #17 &amp; Android #18</div>
+														<div class="ot limited">Legends Limited</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/561" title="Jeice &amp; Burter - DBL62-03S">
+														<img class="trs0 fadeloop2" src="https://i.imgur.com/WpvjhAW.png" transform="OJoYxgm"><img class="trs0 transform fadeloop" src="https://i.imgur.com/OJoYxgm.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Jeice &amp; Burter</div>
+																					
+						</a>
+											<a class="icon a1 ll" href="/characters/285" title="Super Saiyan God SS Gogeta - DBL30-01S">
+														<img class="trs0" src="https://i.imgur.com/GB6pn8i.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan God SS Gogeta</div>
+														<div class="ot limited">Legends Limited</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/528" title="Master Roshi - DBL56-02S">
+														<img class="trs0" src="https://i.imgur.com/zVvlyKH.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Master Roshi</div>
+																					
+						</a>
+											<a class="icon a0 ll" href="/characters/494" title="Final Form Cooler - DBL51-01S">
+														<img class="trs0" src="https://i.imgur.com/8LhPl9l.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Final Form Cooler</div>
+														<div class="ot limited">Legends Limited</div>
+																					
+						</a>
+											<a class="icon a3 ll" href="/characters/497" title="Super Saiyan Trunks (Teen) - DBL50-01S">
+														<img class="trs0" src="https://i.imgur.com/zBsLuJ6.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Trunks (Teen)</div>
+														<div class="ot limited">Legends Limited</div>
+																					
+						</a>
+											<a class="icon a2 ll" href="/characters/462" title="Jiren: Full Power - DBL44-01S">
+														<img class="trs0" src="https://i.imgur.com/7EPfs9S.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Jiren: Full Power</div>
+														<div class="ot limited">Legends Limited</div>
+																					
+						</a>
+											<a class="icon a4 ll" href="/characters/451" title="Super Saiyan Trunks (Adult) - DBL41-02S">
+														<img class="trs0" src="https://i.imgur.com/vS9kRsA.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Trunks (Adult)</div>
+														<div class="ot limited">Legends Limited</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a1" href="/characters/540" title="Jiren - DBL59-04S">
+														<img class="trs0 fadeloop2" src="https://i.imgur.com/rzsr6s5.png" transform="t7Cpy19"><img class="trs0 transform fadeloop" src="https://i.imgur.com/t7Cpy19.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Jiren</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/533" title="Super Saiyan Trunks (Adult) - DBL57-02S">
+														<img class="trs0" src="https://i.imgur.com/vx7tHUk.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Trunks (Adult)</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/569" title="Piccolo Jr. - DBL63-05S">
+														<img class="trs0" src="https://i.imgur.com/wfs7qPd.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Piccolo Jr.</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/492" title="Power Awakening Piccolo - DBL52-03S">
+														<img class="trs0" src="https://i.imgur.com/gLuuKtM.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Power Awakening Piccolo</div>
+																					
+						</a>
+											<a class="icon a3 ll" href="/characters/482" title="Super Saiyan 3 Goku - DBL48-01S">
+														<img class="trs0" src="https://i.imgur.com/cfxIcjn.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan 3 Goku</div>
+														<div class="ot limited">Legends Limited</div>
+																					
+						</a>
+											<a class="icon a2 ll" href="/characters/432" title="Perfect Cell - DBL40-02S">
+														<img class="trs0" src="https://i.imgur.com/4IZfK2A.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Perfect Cell</div>
+														<div class="ot limited">Legends Limited</div>
+																					
+						</a>
+											<a class="icon a4 ll" href="/characters/370" title="Super Saiyan Broly: Full Power - DBL30-03S">
+														<img class="trs0" src="https://i.imgur.com/tvc1p04.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Broly: Full Power</div>
+														<div class="ot limited">Legends Limited</div>
+																					
+						</a>
+											<a class="icon a3 ll" href="/characters/392" title="Super Saiyan 4 Gogeta - DBL35-01S">
+														<img class="trs0" src="https://i.imgur.com/8PVeo4h.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan 4 Gogeta</div>
+														<div class="ot limited">Legends Limited</div>
+																					
+						</a>
+											<a class="icon a2 ll" href="/characters/448" title="Super Saiyan God SS Goku &amp; Vegeta - DBL41-01S">
+														<img class="trs0 fadeloop2" src="https://i.imgur.com/1Qx2OSG.png" transform="QcWq5TN"><img class="trs0 transform fadeloop" src="https://i.imgur.com/QcWq5TN.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan God SS Goku &amp; Vegeta</div>
+														<div class="ot limited">Legends Limited</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/515" title="Zamasu - DBL54-04S">
+														<img class="trs0" src="https://i.imgur.com/CHSQNWb.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Zamasu</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/534" title="2nd Form Cell - DBL57-03S">
+														<img class="trs0 fadeloop2" src="https://i.imgur.com/dzXpida.png" transform="qzQiHfJ"><img class="trs0 transform fadeloop" src="https://i.imgur.com/qzQiHfJ.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">2nd Form Cell</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/570" title="Demon King Piccolo - DBL-EVT-73S">
+														<img class="trs0" src="https://i.imgur.com/ZBeqgSZ.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Demon King Piccolo</div>
+																					
+						</a>
+											<a class="icon a1 ll" href="/characters/456" title="Bardock - DBL43-01S">
+														<img class="trs0" src="https://i.imgur.com/8AOO9dd.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Bardock</div>
+														<div class="ot limited">Legends Limited</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/571" title="Hero Tapion - DBL-EVT-74S">
+														<img class="trs0" src="https://i.imgur.com/QjnJ3Mg.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Hero Tapion</div>
+																					
+						</a>
+											<a class="icon a4 ll" href="/characters/377" title="Buu: Kid - DBL32-02S">
+														<img class="trs0" src="https://i.imgur.com/CXz0M8r.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Buu: Kid</div>
+														<div class="ot limited">Legends Limited</div>
+																					
+						</a>
+											<a class="icon a4 ll" href="/characters/318" title="Super Saiyan God SS Vegito - DBL24-01S">
+														<img class="trs0" src="https://i.imgur.com/5XKFN3O.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan God SS Vegito</div>
+														<div class="ot limited">Legends Limited</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a1 ll" href="/characters/428" title="Super Saiyan God SS Evolved Vegeta - DBL38-01S">
+														<img class="trs0" src="https://i.imgur.com/pNJDGsi.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan God SS Evolved Vegeta</div>
+														<div class="ot limited">Legends Limited</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a4" href="/characters/519" title="Super Saiyan Broly: Full Power - DBL-EVT-61S">
+														<img class="trs0" src="https://i.imgur.com/58bollC.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Broly: Full Power</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/476" title="Gamma 2 - DBL46-04S">
+														<img class="trs0" src="https://i.imgur.com/SZcjsY7.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Gamma 2</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/567" title="Master Roshi - DBL63-02S">
+														<img class="trs0" src="https://i.imgur.com/3YrfVaO.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Master Roshi</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/556" title="Super Saiyan Gohan (Youth) - DBL61-02S">
+														<img class="trs0" src="https://i.imgur.com/2Hf0rEe.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Gohan (Youth)</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/566" title="Android #8 - DBL63-03S">
+														<img class="trs0" src="https://i.imgur.com/ReZTJS6.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Android #8</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/475" title="Gamma 1 - DBL46-03S">
+														<img class="trs0" src="https://i.imgur.com/4uMjBgW.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Gamma 1</div>
+																					
+						</a>
+											<a class="icon a1 ll" href="/characters/375" title="Super Saiyan Gohan - DBL31-01S">
+														<img class="trs0" src="https://i.imgur.com/9xi92SE.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Gohan</div>
+														<div class="ot limited">Legends Limited</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/498" title="Mecha Frieza - DBL50-02S">
+														<img class="trs0" src="https://i.imgur.com/r6QkdEF.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Mecha Frieza</div>
+																					
+						</a>
+											<a class="icon a3 ll" href="/characters/527" title="Super Saiyan God SS Goku - DBL56-01S">
+														<img class="trs0 fadeloop2" src="https://i.imgur.com/lhTBAX9.png" transform="BL4Yumc"><img class="trs0 transform fadeloop" src="https://i.imgur.com/BL4Yumc.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan God SS Goku</div>
+														<div class="ot limited">Legends Limited</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/559" title="Goku - DBL-EVT-72S">
+														<img class="trs0" src="https://i.imgur.com/8x4BnHy.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Goku</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/568" title="Goku - DBL63-04S">
+														<img class="trs0" src="https://i.imgur.com/MYmuIQk.png" transform="">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Goku</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/560" title="Captain Ginyu - DBL62-01S">
+														<img class="trs0 fadeloop2" transform="U7DTGoR" src="https://i.imgur.com/AqKZxwF.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/U7DTGoR.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Captain Ginyu</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/469" title="Golden Frieza - DBL45-02S">
+														<img class="trs0" transform="" src="https://i.imgur.com/m0t7vly.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Golden Frieza</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/430" title="God of Destruction Toppo - DBL38-03S">
+														<img class="trs0" transform="" src="https://i.imgur.com/X0A2NvK.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">God of Destruction Toppo</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/550" title="Magenta - DBL60-04S">
+														<img class="trs0" transform="" src="https://i.imgur.com/4WBF2Wf.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Magenta</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/516" title="Fusion Zamasu - DBL-EVT-60S">
+														<img class="trs0" transform="" src="https://i.imgur.com/lFI25yj.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Fusion Zamasu</div>
+																					
+						</a>
+											<a class="icon a2 ll" href="/characters/366" title="Ultra Instinct -Sign- Goku - DBL29-04S">
+														<img class="trs0" transform="" src="https://i.imgur.com/IvNJMS8.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Ultra Instinct -Sign- Goku</div>
+														<div class="ot limited">Legends Limited</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a4" href="/characters/548" title="Android #13 - DBL-EVT-69S">
+														<img class="trs0" transform="" src="https://i.imgur.com/K8hK63e.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Android #13</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/522" title="Super Saiyan Goku - DBL-EVT-59S">
+														<img class="trs0" transform="" src="https://i.imgur.com/9XkRU0B.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Goku</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/445" title="Fused with Nail Piccolo - DBL40-04S">
+														<img class="trs0" transform="" src="https://i.imgur.com/K8Taa4j.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Fused with Nail Piccolo</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/459" title="Kaioken Goku - DBL43-04S">
+														<img class="trs0" transform="" src="https://i.imgur.com/gamJLdZ.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Kaioken Goku</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a1 ll" href="/characters/414" title="Final Form Frieza: Full Power - DBL37-02S">
+														<img class="trs0" transform="" src="https://i.imgur.com/7n8TJ7P.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Final Form Frieza: Full Power</div>
+														<div class="ot limited">Legends Limited</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a0" href="/characters/541" title="Kahseral - DBL59-06S">
+														<img class="trs0" transform="" src="https://i.imgur.com/kzWA5hV.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Kahseral</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/471" title="Super Saiyan Trunks (Teen) - DBL-EVT-46S">
+														<img class="trs0" transform="" src="https://i.imgur.com/LfWlClB.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Trunks (Teen)</div>
+																					
+						</a>
+											<a class="icon a2 ll" href="/characters/383" title="Super Saiyan Rosé Goku Black - DBL33-02S">
+														<img class="trs0" transform="" src="https://i.imgur.com/yhI8LTG.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Rosé Goku Black</div>
+														<div class="ot limited">Legends Limited</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a3 ll" href="/characters/551" title="Power Awakening Piccolo - DBL60-02S">
+														<img class="trs0 fadeloop2" transform="tzYMuNz" src="https://i.imgur.com/6UWlqUI.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/tzYMuNz.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Power Awakening Piccolo</div>
+														<div class="ot limited">Legends Limited</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/444" title="Super Saiyan Goku - DBL40-03S">
+														<img class="trs0" transform="" src="https://i.imgur.com/aIm22gH.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Goku</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/535" title="Pui Pui - DBL-EVT-64S">
+														<img class="trs0" transform="" src="https://i.imgur.com/1KlUrQX.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Pui Pui</div>
+																					
+						</a>
+											<a class="icon a1 ll" href="/characters/388" title="Super Saiyan 4 Goku - DBL34-01S">
+														<img class="trs0" transform="" src="https://i.imgur.com/GGCxoLh.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan 4 Goku</div>
+														<div class="ot limited">Legends Limited</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a2" href="/characters/474" title="Super Saiyan Gogeta - DBL-EVT-50S">
+														<img class="trs0" transform="" src="https://i.imgur.com/bzbwjAI.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Gogeta</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/449" title="Broly - DBL41-03S">
+														<img class="trs0" transform="" src="https://i.imgur.com/SK0gAKJ.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Broly</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/502" title="Android #17 - DBL53-03S">
+														<img class="trs0" transform="" src="https://i.imgur.com/FYXNig3.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Android #17</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/397" title="Super Saiyan 2 Kefla - DBL35-10S">
+														<img class="trs0" transform="" src="https://i.imgur.com/sc7K5SR.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan 2 Kefla</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/507" title="Super #17 - DBL-EVT-58S">
+														<img class="trs0" transform="" src="https://i.imgur.com/4rHAt4E.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super #17</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/486" title="Majin Vegeta - DBL-EVT-51S">
+														<img class="trs0" transform="" src="https://i.imgur.com/PBus0pE.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Majin Vegeta</div>
+																					
+						</a>
+											<a class="icon a0 ll" href="/characters/433" title="Vegeta - DBL39-01S">
+														<img class="trs0" transform="" src="https://i.imgur.com/IogVLJt.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Vegeta</div>
+														<div class="ot limited">Legends Limited</div>
+																					
+						</a>
+											<a class="icon a0 ll" href="/characters/395" title="Half-Corrupted Fusion Zamasu - DBL35-08S">
+														<img class="trs0" transform="" src="https://i.imgur.com/lfr02GE.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Half-Corrupted Fusion Zamasu</div>
+														<div class="ot limited">Legends Limited</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/390" title="Android #17 - DBL34-03S">
+														<img class="trs0" transform="" src="https://i.imgur.com/uRC3u8o.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Android #17</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/558" title="Android #18 - DBL-EVT-71S">
+														<img class="trs0" transform="" src="https://i.imgur.com/q3ctw9V.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Android #18</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/389" title="Android #18 - DBL34-04S">
+														<img class="trs0" transform="" src="https://i.imgur.com/irMSYXM.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Android #18</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/545" title="Ultimate Gohan - DBL-EVT-66S">
+														<img class="trs0" transform="" src="https://i.imgur.com/otUyKnX.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Ultimate Gohan</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/460" title="Final Form Frieza - DBL43-05S">
+														<img class="trs0 fadeloop2" transform="fM0LOLV" src="https://i.imgur.com/TKnrLn2.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/fM0LOLV.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Final Form Frieza</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/380" title="Super Saiyan Broly - DBL32-05S">
+														<img class="trs0" transform="" src="https://i.imgur.com/PZwv8VK.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Broly</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/489" title="Tien - DBL49-02S">
+														<img class="trs0" transform="" src="https://i.imgur.com/WbWbZ0j.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Tien</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/525" title="Saiyan in Red - DBL00-03">
+														<img class="trs0" transform="" src="https://i.imgur.com/F6d3iDy.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Saiyan in Red</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/552" title="Gohan - DBL60-01S">
+														<img class="trs0" transform="" src="https://i.imgur.com/a8r0kDr.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Gohan</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/177" title="Launch - DBL31-05S">
+														<img class="trs0" transform="" src="https://i.imgur.com/LBLU2Ir.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Launch</div>
+																					
+						</a>
+											<a class="icon a2 ll" href="/characters/409" title="Super Saiyan Gohan (Youth) - DBL36-01S">
+														<img class="trs0 fadeloop2" transform="etgKlf5" src="https://i.imgur.com/qNKufaf.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/etgKlf5.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Gohan (Youth)</div>
+														<div class="ot limited">Legends Limited</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/479" title="Goku - DBL-EVT-47S">
+														<img class="trs0" transform="" src="https://i.imgur.com/w1iZqny.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Goku</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/526" title="Super Saiyan 2 Kefla - DBL-EVT-62S">
+														<img class="trs0" transform="" src="https://i.imgur.com/QBQoZEH.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan 2 Kefla</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/396" title="Super Saiyan God SS Vegito - DBL35-02S">
+														<img class="trs0" transform="" src="https://i.imgur.com/qftH32n.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan God SS Vegito</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/478" title="Super Saiyan Vegeta - DBL47-02S">
+														<img class="trs0 fadeloop2" transform="PddsRLG" src="https://i.imgur.com/3HFv8zm.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/PddsRLG.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Vegeta</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/425" title="Majuub - DBL37-04S">
+														<img class="trs0" transform="" src="https://i.imgur.com/raJSsoQ.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Majuub</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/562" title="Recoome &amp; Guldo - DBL62-02S">
+														<img class="trs0 fadeloop2" transform="68xPyM5" src="https://i.imgur.com/H7AJKVK.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/68xPyM5.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Recoome &amp; Guldo</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/320" title="Fusion Zamasu - DBL24-08S">
+														<img class="trs0" transform="" src="https://i.imgur.com/NksykZ1.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Fusion Zamasu</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a0" href="/characters/371" title="Final Form Frieza - DBL30-02S">
+														<img class="trs0" transform="" src="https://i.imgur.com/VD8F6IJ.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Final Form Frieza</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/350" title="Goku Black - DBL27-06S">
+														<img class="trs0 fadeloop2" transform="QpGeUbX" src="https://i.imgur.com/bqVlPn7.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/QpGeUbX.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Goku Black</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/546" title="Super Saiyan God SS Vegeta - DBL-EVT-67S">
+														<img class="trs0" transform="" src="https://i.imgur.com/FAFOOBP.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan God SS Vegeta</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/322" title="Super Full Power Saiyan 4 Goku - DBL24-03S">
+														<img class="trs0" transform="" src="https://i.imgur.com/jKPrgD0.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Full Power Saiyan 4 Goku</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a1" href="/characters/483" title="Hero Tapion - DBL48-02S">
+														<img class="trs0" transform="" src="https://i.imgur.com/hUaaoRQ.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Hero Tapion</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/412" title="Super Saiyan Trunks (Teen) - DBL36-02S">
+														<img class="trs0" transform="" src="https://i.imgur.com/rhlilFs.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Trunks (Teen)</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/441" title="Gohan (Kid): Piccolo (Assist) - DBL39-03S">
+														<img class="trs0 fadeloop2" transform="8WH6CB7" src="https://i.imgur.com/pxKkveN.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/8WH6CB7.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Gohan (Kid): Piccolo (Assist)</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/542" title="Kyawei - DBL59-05S">
+														<img class="trs0" transform="" src="https://i.imgur.com/qxevnTD.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Kyawei</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/163" title="Nappa - DBL39-04S">
+														<img class="trs0" transform="" src="https://i.imgur.com/RwA7Cf1.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Nappa</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/500" title="Pan - DBL52-02S">
+														<img class="trs0" transform="" src="https://i.imgur.com/XhsJLUZ.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Pan</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/321" title="Omega Shenron - DBL24-09S">
+														<img class="trs0" transform="" src="https://i.imgur.com/zC7irB4.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Omega Shenron</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/455" title="1st Form Frieza - DBL-EVT-41S">
+														<img class="trs0" transform="" src="https://i.imgur.com/lu1k0Cn.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">1st Form Frieza</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/340" title="Jiren - DBL29-06S">
+														<img class="trs0" transform="" src="https://i.imgur.com/ZwQQ0wg.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Jiren</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a4" href="/characters/275" title="Eis Shenron - DBL35-03S">
+														<img class="trs0" transform="" src="https://i.imgur.com/5S73wuJ.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Eis Shenron</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/481" title="Tien - DBL-EVT-49S">
+														<img class="trs0" transform="" src="https://i.imgur.com/lsMxeO3.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Tien</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/480" title="Krillin - DBL-EVT-48S">
+														<img class="trs0" transform="" src="https://i.imgur.com/RNIMA9g.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Krillin</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/547" title="Final Form Cooler - DBL-EVT-68S">
+														<img class="trs0" transform="" src="https://i.imgur.com/S1FHVzs.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Final Form Cooler</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/461" title="Android #18 - DBL-EVT-43S">
+														<img class="trs0" transform="" src="https://i.imgur.com/eS9jBFi.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Android #18</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/493" title="Metal Cooler - DBL-EVT-57S">
+														<img class="trs0" transform="" src="https://i.imgur.com/iFk5F5S.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Metal Cooler</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/553" title="Goku Black - DBL-EVT-70S">
+														<img class="trs0" transform="" src="https://i.imgur.com/eys8nvD.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Goku Black</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/488" title="Ultimate Gohan Absorbed Buu: Super - DBL49-03S">
+														<img class="trs0" transform="" src="https://i.imgur.com/S3BsDtc.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Ultimate Gohan Absorbed Buu: Super</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/302" title="Bergamo - DBL28-01S">
+														<img class="trs0" transform="" src="https://i.imgur.com/NeET1Ta.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Bergamo</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a1" href="/characters/319" title="Super Saiyan Trunks (Adult) (Rage) - DBL24-05S">
+														<img class="trs0" transform="" src="https://i.imgur.com/qo1o43c.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Trunks (Adult) (Rage)</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/452" title="Zamasu: Goku Black (Assist) - DBL41-04S">
+														<img class="trs0" transform="" src="https://i.imgur.com/s1qkCZ1.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Zamasu: Goku Black (Assist)</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/272" title="Nuova Shenron - DBL35-04S">
+														<img class="trs0" transform="" src="https://i.imgur.com/PtmRBq5.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Nuova Shenron</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/463" title="God of Destruction Beerus - DBL44-02S">
+														<img class="trs0" transform="" src="https://i.imgur.com/tLWf7nN.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">God of Destruction Beerus</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/467" title="Super Saiyan God SS Vegeta - DBL-EVT-45S">
+														<img class="trs0" transform="" src="https://i.imgur.com/eOoobdc.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan God SS Vegeta</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/404" title="Super Saiyan 3 Goku - DBL-EVT-21S">
+														<img class="trs0" transform="" src="https://i.imgur.com/CBUTAbd.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan 3 Goku</div>
+																					
+						</a>
+											<a class="icon a3 ll" href="/characters/251" title="Super Saiyan 3 Goku - DBL17-05S">
+														<img class="trs0" transform="" src="https://i.imgur.com/mStPuXR.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan 3 Goku</div>
+														<div class="ot limited">Legends Limited</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a1" href="/characters/490" title="Perfect Form Cell - DBL-EVT-56S">
+														<img class="trs0" transform="" src="https://i.imgur.com/2MAGSvJ.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Perfect Form Cell</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/300" title="Android #21: Good - DBL31-02S">
+														<img class="trs0" transform="" src="https://i.imgur.com/ZNbuHJI.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Android #21: Good</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a0" href="/characters/384" title="Trunks: Mai (Assist) - DBL33-01S">
+														<img class="trs0" transform="" src="https://i.imgur.com/xO8XiMU.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Trunks: Mai (Assist)</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a2" href="/characters/470" title="Whis - DBL45-03S">
+														<img class="trs0" transform="" src="https://i.imgur.com/lr9neRM.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Whis</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/411" title="Boujack - DBL36-03S">
+														<img class="trs0 fadeloop2" transform="qSou1j8" src="https://i.imgur.com/srmhynS.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/qSou1j8.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Boujack</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/261" title="Buu: Kid - DBL-EVT-37S">
+														<img class="trs0" transform="" src="https://i.imgur.com/rPLuMzB.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Buu: Kid</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/364" title="Metal Cooler - DBL29-02S">
+														<img class="trs0" transform="" src="https://i.imgur.com/r6JQQYe.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Metal Cooler</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/431" title="Super Saiyan 2 Caulifla: Kale (Assist) - DBL38-04S">
+														<img class="trs0" transform="" src="https://i.imgur.com/vo3qEYi.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan 2 Caulifla: Kale (Assist)</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/531" title="Super Saiyan 2 Trunks (Adult) - DBL-EVT-63S">
+														<img class="trs0" transform="" src="https://i.imgur.com/YKSoe6J.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan 2 Trunks (Adult)</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/363" title="Super Saiyan Vegeta - DBL29-01S">
+														<img class="trs0" transform="" src="https://i.imgur.com/U09EkMo.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Vegeta</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/447" title="Super Saiyan Rosé Goku Black - DBL-EVT-39S">
+														<img class="trs0" transform="" src="https://i.imgur.com/n4VD3HF.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Rosé Goku Black</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/381" title="Demon King Piccolo (Aged) - DBL32-04S">
+														<img class="trs0 fadeloop2" transform="Z57ZuY3" src="https://i.imgur.com/gM1oROa.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/Z57ZuY3.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Demon King Piccolo (Aged)</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/466" title="Super Saiyan God SS Goku - DBL-EVT-44S">
+														<img class="trs0" transform="" src="https://i.imgur.com/LBR9N2O.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan God SS Goku</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/256" title="Full Power Boujack - DBL17-03S">
+														<img class="trs0" transform="" src="https://i.imgur.com/tiIw6NT.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Full Power Boujack</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/337" title="Hit - DBL33-04S">
+														<img class="trs0" transform="" src="https://i.imgur.com/s8mcGC2.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Hit</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/315" title="Super Saiyan God SS Vegeta - DBL25-05S">
+														<img class="trs0" transform="" src="https://i.imgur.com/go25xCa.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan God SS Vegeta</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/273" title="Syn Shenron - DBL21-01S">
+														<img class="trs0" transform="" src="https://i.imgur.com/uiXeAfX.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Syn Shenron</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/424" title="Super Saiyan 3 Goku - DBL37-03S">
+														<img class="trs0" transform="" src="https://i.imgur.com/r4jAZCg.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan 3 Goku</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/254" title="God of Destruction Champa - DBL28-05S">
+														<img class="trs0" transform="" src="https://i.imgur.com/3OupUUc.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">God of Destruction Champa</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/328" title="Wasteland Bandit Yamcha - DBL31-03S">
+														<img class="trs0" transform="" src="https://i.imgur.com/pr48suf.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Wasteland Bandit Yamcha</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/374" title="Goku - DBL-EVT-40S">
+														<img class="trs0" transform="" src="https://i.imgur.com/qZwEPMw.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Goku</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/406" title="Super Saiyan God SS Goku - DBL-EVT-23S">
+														<img class="trs0" transform="" src="https://i.imgur.com/J6Dkm7K.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan God SS Goku</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/293" title="Super Saiyan 2 Kefla - DBL23-05S">
+														<img class="trs0" transform="" src="https://i.imgur.com/uJGGCOj.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan 2 Kefla</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a0" href="/characters/314" title="Super Saiyan God SS Goku - DBL25-04S">
+														<img class="trs0" transform="" src="https://i.imgur.com/cyMtalK.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan God SS Goku</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/277" title="Broly: Cheelai (Assist) - DBL22-09S">
+														<img class="trs0" transform="" src="https://i.imgur.com/DPqBSDQ.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Broly: Cheelai (Assist)</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a2" href="/characters/427" title="Legendary Super Saiyan Broly - DBL-EVT-30S">
+														<img class="trs0" transform="" src="https://i.imgur.com/EKV9XxP.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Legendary Super Saiyan Broly</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/341" title="Toppo - DBL29-07S">
+														<img class="trs0" transform="" src="https://i.imgur.com/MPq9nSq.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Toppo</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/299" title="Android #21 - DBL-EVT-42S">
+														<img class="trs0" transform="" src="https://i.imgur.com/UUMhZYD.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Android #21</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a4 ll" href="/characters/346" title="Vegeta - DBL26-06S">
+														<img class="trs0 fadeloop2" transform="bggQx3K" src="https://i.imgur.com/AzTVKKt.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/bggQx3K.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Vegeta</div>
+														<div class="ot limited">Legends Limited</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a1" href="/characters/338" title="Turles - DBL25-08S">
+														<img class="trs0" transform="" src="https://i.imgur.com/584VEcz.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Turles</div>
+																					
+						</a>
+											<a class="icon a3 ll" href="/characters/265" title="Super Saiyan God SS Vegeta - DBL18-05S">
+														<img class="trs0" transform="" src="https://i.imgur.com/HfDTctF.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan God SS Vegeta</div>
+														<div class="ot limited">Legends Limited</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a3" href="/characters/243" title="Goku - DBL16-01S">
+														<img class="trs0" transform="" src="https://i.imgur.com/wrTqy4h.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Goku</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a2" href="/characters/503" title="Buu: Super - DBL-EVT-65S">
+														<img class="trs0" transform="" src="https://i.imgur.com/LodD9Xi.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Buu: Super</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/499" title="Goku Black - DBL50-03S">
+														<img class="trs0" transform="" src="https://i.imgur.com/RMOWkDb.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Goku Black</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/524" title="Zahha - DBL00-02">
+														<img class="trs0" transform="" src="https://i.imgur.com/gk4A7aW.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Zahha</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/401" title="Goku - DBL-EVT-18S">
+														<img class="trs0" transform="" src="https://i.imgur.com/M6IPxt8.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Goku</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/386" title="Super Saiyan God SS Goku - DBL33-03S">
+														<img class="trs0 fadeloop2" transform="1uW7WuO" src="https://i.imgur.com/Pmea5XR.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/1uW7WuO.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan God SS Goku</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/242" title="Fusion Android #13 - DBL16-02S">
+														<img class="trs0" transform="" src="https://i.imgur.com/rWrxvjO.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Fusion Android #13</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a3" href="/characters/310" title="Super Kaioken Goku - DBL24-13S">
+														<img class="trs0" transform="" src="https://i.imgur.com/Iyp1qay.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Kaioken Goku</div>
+																					
+						</a>
+											<a class="icon a0 ll" href="/characters/191" title="Super Saiyan 2 Gohan (Youth) - DBL10-06S">
+														<img class="trs0" transform="" src="https://i.imgur.com/672rP7q.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan 2 Gohan (Youth)</div>
+														<div class="ot limited">Legends Limited</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a3" href="/characters/339" title="Super Saiyan Goku - DBL25-07S">
+														<img class="trs0" transform="" src="https://i.imgur.com/a7oDmsQ.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Goku</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/294" title="Super Saiyan Trunks (Teen) - DBL23-01S">
+														<img class="trs0" transform="" src="https://i.imgur.com/H2ju9uM.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Trunks (Teen)</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/306" title="Vegito - DBL22-08S">
+														<img class="trs0 fadeloop2" transform="2PfjLPo" src="https://i.imgur.com/biPiQxw.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/2PfjLPo.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Vegito</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/405" title="Super Saiyan God Goku - DBL-EVT-22S">
+														<img class="trs0" transform="" src="https://i.imgur.com/DNQ9poW.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan God Goku</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/288" title="Super Gogeta - DBL20-01S">
+														<img class="trs0" transform="" src="https://i.imgur.com/ebbpOs0.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Gogeta</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a0" href="/characters/264" title="Super Saiyan Rosé Goku Black - DBL18-06S">
+														<img class="trs0" transform="" src="https://i.imgur.com/i0uAwS4.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Rosé Goku Black</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a0" href="/characters/271" title="Super Saiyan 4 Vegeta - DBL19-07S">
+														<img class="trs0" transform="" src="https://i.imgur.com/TEdPDL2.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan 4 Vegeta</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a1" href="/characters/255" title="Bardock - DBL19-01S">
+														<img class="trs0" transform="" src="https://i.imgur.com/GSmSRHq.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Bardock</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/219" title="Final Form Frieza: Full Power - DBL15-06S">
+														<img class="trs0" transform="" src="https://i.imgur.com/9elbC51.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Final Form Frieza: Full Power</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a4" href="/characters/403" title="Super Saiyan 2 Goku - DBL-EVT-20S">
+														<img class="trs0" transform="" src="https://i.imgur.com/CyPNVyT.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan 2 Goku</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/240" title="Goku - DBL16-10S">
+														<img class="trs0" transform="" src="https://i.imgur.com/pTPVYey.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Goku</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a4" href="/characters/327" title="Gotenks Absorbed Buu: Super - DBL26-03S">
+														<img class="trs0" transform="" src="https://i.imgur.com/7aOlK0b.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Gotenks Absorbed Buu: Super</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a0" href="/characters/349" title="Great Saiyaman 1 &amp; 2 (Assist) - DBL27-05S">
+														<img class="trs0" transform="" src="https://i.imgur.com/xHp8VUj.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Great Saiyaman 1 &amp; 2 (Assist)</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a4" href="/characters/301" title="Basil - DBL28-03S">
+														<img class="trs0" transform="" src="https://i.imgur.com/IWT23nX.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Basil</div>
+																					
+						</a>
+											<a class="icon a2 ll" href="/characters/204" title="Super Saiyan Goten (Kid) - DBL12-06S">
+														<img class="trs0" transform="" src="https://i.imgur.com/HbTTjkE.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Goten (Kid)</div>
+														<div class="ot limited">Legends Limited</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a0" href="/characters/289" title="Super Janemba - DBL20-02S">
+														<img class="trs0" transform="" src="https://i.imgur.com/2yTmFYa.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Janemba</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a1" href="/characters/402" title="Super Saiyan Goku - DBL-EVT-19S">
+														<img class="trs0" transform="" src="https://i.imgur.com/EE3OPIe.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Goku</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/200" title="Buu: Super - DBL11-09S">
+														<img class="trs0" transform="" src="https://i.imgur.com/TJ1z3K7.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Buu: Super</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/205" title="Super Saiyan Gohan (Teen) - DBL12-05S">
+														<img class="trs0" transform="" src="https://i.imgur.com/Fdzx1tx.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Gohan (Teen)</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a2" href="/characters/303" title="Lavender - DBL28-02S">
+														<img class="trs0" transform="" src="https://i.imgur.com/EkpEyMs.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Lavender</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/373" title="Vegeta - DBL-EVT-15S">
+														<img class="trs0" transform="" src="https://i.imgur.com/LvilOX1.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Vegeta</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/313" title="Super Saiyan Gotenks - DBL23-04S">
+														<img class="trs0 fadeloop2" transform="esiC01K" src="https://i.imgur.com/UgtUhSm.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/esiC01K.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Gotenks</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/305" title="Bardock - DBL22-02S">
+														<img class="trs0 fadeloop2" transform="EHznvJE" src="https://i.imgur.com/74e0RGW.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/EHznvJE.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Bardock</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/343" title="Goten (Kid) - DBL27-02S">
+														<img class="trs0 fadeloop2" transform="F0fbiVT" src="https://i.imgur.com/NbM93wM.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/F0fbiVT.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Goten (Kid)</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/290" title="Super Baby 2 - DBL19-08S">
+														<img class="trs0" transform="" src="https://i.imgur.com/qnBBLin.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Baby 2</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a2" href="/characters/270" title="Super Saiyan 4 Goku - DBL19-05S">
+														<img class="trs0" transform="" src="https://i.imgur.com/983bCDo.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan 4 Goku</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a3" href="/characters/218" title="Golden Frieza - DBL13-06S">
+														<img class="trs0" transform="" src="https://i.imgur.com/HcPehh0.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Golden Frieza</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/378" title="Vegeta - DBL32-01S">
+														<img class="trs0" transform="" src="https://i.imgur.com/sKzKqFz.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Vegeta</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/225" title="Buu: Kid - DBL17-06S">
+														<img class="trs0" transform="" src="https://i.imgur.com/ypL9eRX.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Buu: Kid</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/241" title="Super #17 - DBL16-13S">
+														<img class="trs0" transform="" src="https://i.imgur.com/Qb2ygsG.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super #17</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a4" href="/characters/173" title="Ribrianne - DBL11-07S">
+														<img class="trs0" transform="" src="https://i.imgur.com/UI8EjMp.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Ribrianne</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/286" title="Super Saiyan God Goku - DBL20-05S">
+														<img class="trs0" transform="" src="https://i.imgur.com/D4NGWCm.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan God Goku</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/298" title="Android #21: Evil - DBL21-05S">
+														<img class="trs0 fadeloop2" transform="E43jUGM" src="https://i.imgur.com/VtrSUmK.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/E43jUGM.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Android #21: Evil</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a4" href="/characters/287" title="Super Saiyan Vegeta - DBL20-06S">
+														<img class="trs0 fadeloop2" transform="1ia3Vwj" src="https://i.imgur.com/AR9C63O.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/1ia3Vwj.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Vegeta</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/260" title="Ultimate Gohan Absorbed Buu: Super - DBL-EVT-16S">
+														<img class="trs0" transform="" src="https://i.imgur.com/HpepEWQ.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Ultimate Gohan Absorbed Buu: Super</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/326" title="Gohan (Adult) - DBL26-02S">
+														<img class="trs0 fadeloop2" transform="v06V60e" src="https://i.imgur.com/KsFYRzk.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/v06V60e.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Gohan (Adult)</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/252" title="Goku - DBL22-01S">
+														<img class="trs0" transform="" src="https://i.imgur.com/4K4AInT.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Goku</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/278" title="Kakarot Goku - DBL-EVT-14S">
+														<img class="trs0" transform="" src="https://i.imgur.com/RKy3DBM.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Kakarot Goku</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a4" href="/characters/216" title="Super Saiyan God SS Goku - DBL13-01S">
+														<img class="trs0" transform="" src="https://i.imgur.com/1iVcTC0.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan God SS Goku</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a3" href="/characters/296" title="Baby Vegeta - DBL21-02S">
+														<img class="trs0" transform="" src="https://i.imgur.com/PvYOSn1.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Baby Vegeta</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/344" title="Trunks (Kid) - DBL27-03S">
+														<img class="trs0 fadeloop2" transform="yQWsbNr" src="https://i.imgur.com/351YLI0.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/yQWsbNr.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Trunks (Kid)</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/259" title="Raditz - DBL22-04S">
+														<img class="trs0" transform="" src="https://i.imgur.com/6C8hJra.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Raditz</div>
+																					
+						</a>
+											<a class="icon a2 ll" href="/characters/304" title="1st Form Frieza - DBL22-05S">
+														<img class="trs0" transform="" src="https://i.imgur.com/RhoZyJa.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">1st Form Frieza</div>
+														<div class="ot limited">Legends Limited</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a0" href="/characters/342" title="Dyspo - DBL29-08S">
+														<img class="trs0" transform="" src="https://i.imgur.com/KcsZDHO.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Dyspo</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/379" title="Bulma (Youth) - DBL-EVT-THX1000">
+														<img class="trs0" transform="" src="https://i.imgur.com/Hojdj6I.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Bulma (Youth)</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/238" title="Super Saiyan Gohan (Youth) - DBL17-01S">
+														<img class="trs0 fadeloop2" transform="FoHHwV9" src="https://i.imgur.com/pAfIawL.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/FoHHwV9.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Gohan (Youth)</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/62" title="Android #17 - DBL03-05S">
+														<img class="trs0" transform="" src="https://i.imgur.com/IiMAxRS.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Android #17</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a2 ll" href="/characters/224" title="Super Vegito - DBL13-03S">
+														<img class="trs0" transform="" src="https://i.imgur.com/uvLuXuR.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Vegito</div>
+														<div class="ot limited">Legends Limited</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a3" href="/characters/207" title="Legendary Super Saiyan Broly - DBL12-01S">
+														<img class="trs0" transform="" src="https://i.imgur.com/PUDH2MF.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Legendary Super Saiyan Broly</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a0" href="/characters/244" title="Android #18 - DBL16-07S">
+														<img class="trs0" transform="" src="https://i.imgur.com/ARH3gjJ.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Android #18</div>
+																					
+						</a>
+											<a class="icon a1 ll" href="/characters/253" title="Piccolo - DBL22-03S">
+														<img class="trs0 fadeloop2" transform="CbpwPx8" src="https://i.imgur.com/zqxrtIT.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/CbpwPx8.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Piccolo</div>
+														<div class="ot limited">Legends Limited</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a3" href="/characters/215" title="Ultimate Gohan Absorbed Buu: Super - DBL13-09S">
+														<img class="trs0" transform="" src="https://i.imgur.com/pGoQSiu.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Ultimate Gohan Absorbed Buu: Super</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/295" title="1st Form Cell - DBL23-02S">
+														<img class="trs0" transform="" src="https://i.imgur.com/qKNTHfr.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">1st Form Cell</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/227" title="Android #13 - DBL14-05S">
+														<img class="trs0" transform="" src="https://i.imgur.com/auAUG8G.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Android #13</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/179" title="Kakunsa - DBL16-08S">
+														<img class="trs0" transform="" src="https://i.imgur.com/3xPjxAJ.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Kakunsa</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/190" title="Perfect Cell - DBL10-09S">
+														<img class="trs0" transform="" src="https://i.imgur.com/8Hu1zqh.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Perfect Cell</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a0" href="/characters/198" title="Hyper Meta-Rilldo - DBL11-04S">
+														<img class="trs0" transform="" src="https://i.imgur.com/PbWVdKV.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Hyper Meta-Rilldo</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/199" title="Super Saiyan 3 Gotenks - DBL11-08S">
+														<img class="trs0" transform="" src="https://i.imgur.com/gaJ0tOt.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan 3 Gotenks</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a0" href="/characters/276" title="Hero Tapion - DBL19-03S">
+														<img class="trs0" transform="" src="https://i.imgur.com/VzbKIlp.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Hero Tapion</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/230" title="Vados - DBL28-06S">
+														<img class="trs0" transform="" src="https://i.imgur.com/cx8IUv8.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Vados</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/217" title="Super Saiyan God SS Vegeta - DBL13-02S">
+														<img class="trs0" transform="" src="https://i.imgur.com/wREEzsi.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan God SS Vegeta</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a0" href="/characters/140" title="Vegito - DBL-EVT-07S">
+														<img class="trs0" transform="" src="https://i.imgur.com/FkWBA7i.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Vegito</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a0" href="/characters/128" title="Super Saiyan Kale (Berserk) - DBL09-04S">
+														<img class="trs0" transform="" src="https://i.imgur.com/zSmQeF2.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Kale (Berserk)</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a2" href="/characters/131" title="Goku Black - DBL15-02S">
+														<img class="trs0" transform="" src="https://i.imgur.com/zx5qR9o.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Goku Black</div>
+																					
+						</a>
+											<a class="icon a4 ll" href="/characters/220" title="Goku - DBL15-05S">
+														<img class="trs0 fadeloop2" transform="YJsfrjr" src="https://i.imgur.com/CrNnFC8.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/YJsfrjr.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Goku</div>
+														<div class="ot limited">Legends Limited</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a2" href="/characters/50" title="Turles - DBL02-13S">
+														<img class="trs0" transform="" src="https://i.imgur.com/bVQi5wP.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Turles</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a1" href="/characters/237" title="Hit - DBL15-08S">
+														<img class="trs0" transform="" src="https://i.imgur.com/hGgmFFi.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Hit</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/268" title="Final Form Frieza - DBL18-01S">
+														<img class="trs0 fadeloop2" transform="vh4KJzp" src="https://i.imgur.com/4HbpBvf.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/vh4KJzp.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Final Form Frieza</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/157" title="Super Saiyan Gohan (Teen) - DBL-EVT-12S">
+														<img class="trs0" transform="" src="https://i.imgur.com/ELk04x2.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Gohan (Teen)</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/311" title="Pikkon - DBL24-15S">
+														<img class="trs0 fadeloop2" transform="1eX8or6" src="https://i.imgur.com/V2HoCAQ.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/1eX8or6.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Pikkon</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/258" title="Gohan - DBL15-01S">
+														<img class="trs0 fadeloop2" transform="p0GFhrn" src="https://i.imgur.com/ekHFrZ6.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/p0GFhrn.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Gohan</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a4" href="/characters/192" title="Gogeta - DBL10-11S">
+														<img class="trs0 fadeloop2" transform="ZD6C9mz" src="https://i.imgur.com/REq1D7w.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/ZD6C9mz.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Gogeta</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a4" href="/characters/297" title="Android #21 - DBL-EVT-13S">
+														<img class="trs0" transform="" src="https://i.imgur.com/NmCs9GD.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Android #21</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a2" href="/characters/172" title="Super Saiyan 2 Caulifla - DBL09-03S">
+														<img class="trs0" transform="" src="https://i.imgur.com/BcbqroK.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan 2 Caulifla</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a2" href="/characters/183" title="Great Saiyaman 1 - DBL-EVT-05S">
+														<img class="trs0" transform="" src="https://i.imgur.com/rpWLNqU.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Great Saiyaman 1</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/184" title="Great Saiyaman 2 - DBL11-06S">
+														<img class="trs0" transform="" src="https://i.imgur.com/dnQyx4Z.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Great Saiyaman 2</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/46" title="Super Saiyan Vegeta - DBL02-01S">
+														<img class="trs0" transform="" src="https://i.imgur.com/Ze0ZMex.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Vegeta</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/148" title="Super Gogeta - DBL05-10S">
+														<img class="trs0" transform="" src="https://i.imgur.com/ZoKhBEP.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Gogeta</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a1" href="/characters/77" title="Super Saiyan Vegeta - DBL11-02S">
+														<img class="trs0" transform="" src="https://i.imgur.com/WXXCBdB.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Vegeta</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a4" href="/characters/81" title="1st Form Frieza - DBL03-13S">
+														<img class="trs0" transform="" src="https://i.imgur.com/ZL5pIbB.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">1st Form Frieza</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/206" title="Super Saiyan Goku - DBL12-04S">
+														<img class="trs0" transform="" src="https://i.imgur.com/bQgK8tJ.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Goku</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a3" href="/characters/66" title="Super Saiyan Cabba - DBL09-01S">
+														<img class="trs0" transform="" src="https://i.imgur.com/qRhB9lL.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Cabba</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a3" href="/characters/186" title="Ultimate Gohan - DBL10-02S">
+														<img class="trs0" transform="" src="https://i.imgur.com/yFRvtHr.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Ultimate Gohan</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a0" href="/characters/187" title="Super Saiyan 3 Goku - DBL10-01S">
+														<img class="trs0" transform="" src="https://i.imgur.com/6fViBAz.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan 3 Goku</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/180" title="Rozie - DBL16-09S">
+														<img class="trs0" transform="" src="https://i.imgur.com/kaJZhrj.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Rozie</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/168" title="Final Form Cooler - DBL08-10S">
+														<img class="trs0" transform="" src="https://i.imgur.com/neq05gr.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Final Form Cooler</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a3" href="/characters/228" title="Android #14 - DBL14-02S">
+														<img class="trs0" transform="" src="https://i.imgur.com/4Glf8KC.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Android #14</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/189" title="Super Namekian Lord Slug - DBL10-10S">
+														<img class="trs0" transform="" src="https://i.imgur.com/EpxU6RT.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Namekian Lord Slug</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a0" href="/characters/143" title="Majin Vegeta - DBL06-12S">
+														<img class="trs0" transform="" src="https://i.imgur.com/hpq9cyG.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Majin Vegeta</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a3" href="/characters/82" title="Super Saiyan Goku - DBL11-01S">
+														<img class="trs0" transform="" src="https://i.imgur.com/pPehaFa.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Goku</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/208" title="Metal Cooler - DBL12-02S">
+														<img class="trs0" transform="" src="https://i.imgur.com/pJEYfPb.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Metal Cooler</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a2" href="/characters/266" title="Cooler - DBL18-03S">
+														<img class="trs0 fadeloop2" transform="jhr2Efx" src="https://i.imgur.com/DNTGL5f.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/jhr2Efx.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Cooler</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/167" title="Boujack - DBL08-13S">
+														<img class="trs0" transform="" src="https://i.imgur.com/9TFv9TO.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Boujack</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/236" title="Super Saiyan God SS Goku - DBL15-07S">
+														<img class="trs0 fadeloop2" transform="uLO3cbs" src="https://i.imgur.com/uQnRz43.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/uLO3cbs.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan God SS Goku</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a2" href="/characters/164" title="Super Saiyan Broly - DBL07-07S">
+														<img class="trs0 fadeloop2" transform="l77nltf" src="https://i.imgur.com/6aNjbYb.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/l77nltf.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Broly</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a2" href="/characters/162" title="Nappa (Young) - DBL-EVT-11S">
+														<img class="trs0" transform="" src="https://i.imgur.com/MN1FI1W.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Nappa (Young)</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/226" title="Trunks (Teen) - DBL14-04S">
+														<img class="trs0 fadeloop2" transform="HlDo7L1" src="https://i.imgur.com/TZjjkeR.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/HlDo7L1.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Trunks (Teen)</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/113" title="Majin Buu: Good - DBL06-06S">
+														<img class="trs0" transform="" src="https://i.imgur.com/GyaQFWR.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Majin Buu: Good</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a1" href="/characters/123" title="Super Saiyan Gohan - DBL08-01S">
+														<img class="trs0" transform="" src="https://i.imgur.com/AKJpAd9.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Gohan</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/229" title="Android #15 - DBL14-03S">
+														<img class="trs0" transform="" src="https://i.imgur.com/C0RsR7H.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Android #15</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/14" title="Vegeta - DBL01-17S">
+														<img class="trs0" transform="" src="https://i.imgur.com/k2eWZZ7.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Vegeta</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a2" href="/characters/160" title="Goku - DBL02-11S">
+														<img class="trs0" transform="" src="https://i.imgur.com/bRx4FLH.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Goku</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/246" title="Goku Captain Ginyu - DBL-EVT-10S">
+														<img class="trs0" transform="" src="https://i.imgur.com/nVLkekE.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Goku Captain Ginyu</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/127" title="Zamasu - DBL08-14S">
+														<img class="trs0" transform="" src="https://i.imgur.com/4d6eoKH.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Zamasu</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/112" title="Super Saiyan 3 Goku - DBL06-11S">
+														<img class="trs0" transform="" src="https://i.imgur.com/WylqBDm.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan 3 Goku</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a4" href="/characters/257" title="Vegeta - DBL14-01S">
+														<img class="trs0 fadeloop2" transform="Cq19j4b" src="https://i.imgur.com/5SVzgQR.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/Cq19j4b.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Vegeta</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/144" title="Super Saiyan Gotenks - DBL06-01S">
+														<img class="trs0" transform="" src="https://i.imgur.com/5SaVXy9.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Gotenks</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/97" title="Cooler - DBL02-15S">
+														<img class="trs0" transform="" src="https://i.imgur.com/m94oTzc.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Cooler</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/151" title="Super Saiyan Bardock - DBL07-04S">
+														<img class="trs0" transform="" src="https://i.imgur.com/wzI4zRJ.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Bardock</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a2" href="/characters/149" title="Super Janemba - DBL05-11S">
+														<img class="trs0" transform="" src="https://i.imgur.com/sVWY855.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Janemba</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a3" href="/characters/4" title="Piccolo - DBL01-07S">
+														<img class="trs0" transform="" src="https://i.imgur.com/pujwbpM.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Piccolo</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a1" href="/characters/213" title="Fused with Kami Piccolo - DBL-EVT-09S">
+														<img class="trs0" transform="" src="https://i.imgur.com/btnvOdG.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Fused with Kami Piccolo</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a4" href="/characters/38" title="Pan - DBL01-05S">
+														<img class="trs0" transform="" src="https://i.imgur.com/sNootdT.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Pan</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a0" href="/characters/45" title="Super Saiyan Goku - DBL-EVT-08S">
+														<img class="trs0" transform="" src="https://i.imgur.com/gG3EUcF.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Goku</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/124" title="Super Saiyan 2 Trunks (Adult) - DBL08-02S">
+														<img class="trs0" transform="" src="https://i.imgur.com/GLGMj2U.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan 2 Trunks (Adult)</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a1" href="/characters/32" title="Final Form Frieza - DBL01-41S">
+														<img class="trs0" transform="" src="https://i.imgur.com/b81AznD.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Final Form Frieza</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a1" href="/characters/150" title="Super Saiyan 2 Goku - DBL07-01S">
+														<img class="trs0" transform="" src="https://i.imgur.com/Gk64TK4.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan 2 Goku</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a3 ll" href="/characters/166" title="God of Destruction Beerus - DBL07-11S">
+														<img class="trs0" transform="" src="https://i.imgur.com/MWLrZ6K.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">God of Destruction Beerus</div>
+														<div class="ot limited">Legends Limited</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a4" href="/characters/61" title="Krillin - DBL03-03S">
+														<img class="trs0" transform="" src="https://i.imgur.com/nq80fDZ.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Krillin</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/188" title="Super Saiyan 2 Vegeta - DBL10-03S">
+														<img class="trs0" transform="" src="https://i.imgur.com/4bwOGNy.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan 2 Vegeta</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/165" title="Super Saiyan God Goku - DBL07-09S">
+														<img class="trs0" transform="" src="https://i.imgur.com/V6RrweN.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan God Goku</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/133" title="Vegeta - DBL07-10S">
+														<img class="trs0" transform="" src="https://i.imgur.com/yFRokm0.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Vegeta</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/60" title="Super Saiyan Goku - DBL03-01S">
+														<img class="trs0" transform="" src="https://i.imgur.com/0mzAchw.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Goku</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/126" title="Goku Black - DBL06-13S">
+														<img class="trs0" transform="" src="https://i.imgur.com/qjEAIPE.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Goku Black</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a1" href="/characters/176" title="Videl - DBL09-07S">
+														<img class="trs0" transform="" src="https://i.imgur.com/3ua8X4l.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Videl</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/147" title="Broly: Fury - DBL-EVT-02S">
+														<img class="trs0" transform="" src="https://i.imgur.com/BPH5vo3.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Broly: Fury</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a1" href="/characters/35" title="Pikkon - DBL01-16S">
+														<img class="trs0" transform="" src="https://i.imgur.com/TQsBq96.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Pikkon</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/185" title="Super Saiyan God Vegeta - DBL09-09S">
+														<img class="trs0" transform="" src="https://i.imgur.com/Dgp2p70.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan God Vegeta</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a4" href="/characters/145" title="King of the Demon Realm Dabura - DBL06-07S">
+														<img class="trs0" transform="" src="https://i.imgur.com/vo97PBl.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">King of the Demon Realm Dabura</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/245" title="Bunny Girl Bulma (Youth) - DBL16-06S">
+														<img class="trs0" transform="" src="https://i.imgur.com/NMgMrhG.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Bunny Girl Bulma (Youth)</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/27" title="Captain Ginyu - DBL01-44S">
+														<img class="trs0" transform="" src="https://i.imgur.com/Y2kZJSv.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Captain Ginyu</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/174" title="Chi-Chi - DBL09-06S">
+														<img class="trs0" transform="" src="https://i.imgur.com/qDRvpQZ.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Chi-Chi</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a3" href="/characters/193" title="Gotenks - DBL-EVT-04S">
+														<img class="trs0" transform="" src="https://i.imgur.com/bH5F2I6.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Gotenks</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a4" href="/characters/107" title="Android #18 - DBL06-10S">
+														<img class="trs0" transform="" src="https://i.imgur.com/A0yT3cJ.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Android #18</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/75" title="Super Saiyan Goku - DBL04-10S">
+														<img class="trs0" transform="" src="https://i.imgur.com/ppirzmv.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Goku</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a0" href="/characters/108" title="Perfect Form Cell - DBL04-04S">
+														<img class="trs0" transform="" src="https://i.imgur.com/ndVWfX5.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Perfect Form Cell</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a1" href="/characters/79" title="Demon King Piccolo - DBL05-08S">
+														<img class="trs0" transform="" src="https://i.imgur.com/dINtFNT.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Demon King Piccolo</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a3" href="/characters/78" title="Bardock - DBL03-10S">
+														<img class="trs0" transform="" src="https://i.imgur.com/lG33Oc3.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Bardock</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/76" title="Goku (Youth) - DBL-EVT-01S">
+														<img class="trs0" transform="" src="https://i.imgur.com/r70z7wh.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Goku (Youth)</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a4" href="/characters/125" title="Goku - DBL07-08S">
+														<img class="trs0 fadeloop2" transform="tD9NMdf" src="https://i.imgur.com/zsCsrcI.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/tD9NMdf.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Goku</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a2" href="/characters/152" title="Chilled - DBL07-05S">
+														<img class="trs0" transform="" src="https://i.imgur.com/RVpTBCE.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Chilled</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a2" href="/characters/111" title="Super Saiyan 2 Gohan (Youth) - DBL04-11S">
+														<img class="trs0" transform="" src="https://i.imgur.com/iVBx4RE.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan 2 Gohan (Youth)</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a1" href="/characters/141" title="Super Saiyan Trunks (Kid) - DBL05-03S">
+														<img class="trs0" transform="" src="https://i.imgur.com/4ytA0Sc.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Trunks (Kid)</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/175" title="Bulma (Youth) - DBL09-05S">
+														<img class="trs0" transform="" src="https://i.imgur.com/TgLh7Es.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Bulma (Youth)</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a3" href="/characters/51" title="Mai - DBL08-03S">
+														<img class="trs0" transform="" src="https://i.imgur.com/4DWxU7L.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Mai</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/94" title="Fused with Kami Piccolo - DBL05-05S">
+														<img class="trs0" transform="" src="https://i.imgur.com/EQjEcJV.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Fused with Kami Piccolo</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a3" href="/characters/95" title="Android #16 - DBL05-06S">
+														<img class="trs0" transform="" src="https://i.imgur.com/rZQ4DZZ.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Android #16</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a1" href="/characters/93" title="Super Vegeta - DBL03-14S">
+														<img class="trs0" transform="" src="https://i.imgur.com/ZisG6Ef.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Vegeta</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a3" href="/characters/142" title="Super Saiyan Goten (Kid) - DBL05-01S">
+														<img class="trs0" transform="" src="https://i.imgur.com/f7VHtpD.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Goten (Kid)</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/345" title="Perfect Form Cell - DBL26-08S">
+														<img class="trs0 fadeloop2" transform="xouO7Fn" src="https://i.imgur.com/VKAW2E9.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/xouO7Fn.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Perfect Form Cell</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/201" title="Taitans Yamcha - DBL-EVT-06S">
+														<img class="trs0" transform="" src="https://i.imgur.com/Ld7oKsE.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Taitans Yamcha</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/109" title="Super Trunks - DBL03-15S">
+														<img class="trs0" transform="" src="https://i.imgur.com/7zR5aXV.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Trunks</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a1" href="/characters/63" title="Android #18 - DBL03-06S">
+														<img class="trs0" transform="" src="https://i.imgur.com/eN16JAM.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Android #18</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a3" href="/characters/101" title="Super Saiyan Goku - DBL04-01S">
+														<img class="trs0" transform="" src="https://i.imgur.com/b2J3PwN.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Goku</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/80" title="Legendary Super Saiyan Broly - DBL01-35S">
+														<img class="trs0" transform="" src="https://i.imgur.com/XSV96fh.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Legendary Super Saiyan Broly</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a1" href="/characters/2" title="Gohan (Kid) - DBL01-36S">
+														<img class="trs0" transform="" src="https://i.imgur.com/YkLpLg1.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Gohan (Kid)</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/16" title="Super Saiyan Goku - DBL01-04S">
+														<img class="trs0" transform="" src="https://i.imgur.com/ml9LHtY.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Goku</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a4" href="/characters/169" title="Trunks (Youth) - DBL-EVT-03S">
+														<img class="trs0 fadeloop2" transform="6MqljJj" src="https://i.imgur.com/86xnh1I.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/6MqljJj.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Trunks (Youth)</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a4" href="/characters/15" title="Goku - DBL-EVT-00S">
+														<img class="trs0" transform="" src="https://i.imgur.com/iDYJWtZ.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Goku</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a0" href="/characters/47" title="Super Saiyan Trunks (Teen) - DBL02-02S">
+														<img class="trs0" transform="" src="https://i.imgur.com/WngUvv1.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">Super Saiyan Trunks (Teen)</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a0" href="/characters/115" title="World Champion Hercule - DBL05-07S">
+														<img class="trs0" transform="" src="https://i.imgur.com/t1EgNhz.png">
+														<div class="ot rarity rs2"></div>
+							<div class="ot over">World Champion Hercule</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/509" title="Android #18 - DBL55-02E">
+														<img class="trs0" transform="" src="https://i.imgur.com/HX9GSht.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Android #18</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/564" title="Gohan (Kid) &amp; Krillin - DBL62-05E">
+														<img class="trs0 fadeloop2" transform="vKO7CwJ" src="https://i.imgur.com/vq0dg2d.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/vKO7CwJ.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Gohan (Kid) &amp; Krillin</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/521" title="Majuub - DBL53-02E">
+														<img class="trs0" transform="" src="https://i.imgur.com/Ku00pdT.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Majuub</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/429" title="Jiren - DBL38-02E">
+														<img class="trs0" transform="" src="https://i.imgur.com/esf28ML.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Jiren</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/520" title="Omega Shenron - DBL53-04E">
+														<img class="trs0" transform="" src="https://i.imgur.com/mrOgyVu.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Omega Shenron</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/518" title="Super Saiyan God SS Vegeta - DBL54-02E">
+														<img class="trs0" transform="" src="https://i.imgur.com/J9oQ3f5.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Super Saiyan God SS Vegeta</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/496" title="Thouser - DBL51-02E">
+														<img class="trs0" transform="" src="https://i.imgur.com/xDFtNi7.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Thouser</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/442" title="Super Saiyan 2 Gohan (Youth) - DBL40-01E">
+														<img class="trs0" transform="" src="https://i.imgur.com/gskWXUB.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Super Saiyan 2 Gohan (Youth)</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/517" title="Super Saiyan God SS Goku - DBL54-01E">
+														<img class="trs0" transform="" src="https://i.imgur.com/UfbEhKe.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Super Saiyan God SS Goku</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/557" title="Cell Jr. - DBL61-04E">
+														<img class="trs0" transform="" src="https://i.imgur.com/OsfXJOd.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Cell Jr.</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/543" title="God of Destruction Champa - DBL59-02E">
+														<img class="trs0" transform="" src="https://i.imgur.com/EcF1Vom.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">God of Destruction Champa</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/450" title="Final Form Frieza - DBL41-05E">
+														<img class="trs0" transform="" src="https://i.imgur.com/LJfu2pt.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Final Form Frieza</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/473" title="Gohan &amp; Trunks (Youth) - DBL46-02E">
+														<img class="trs0 fadeloop2" transform="f4bMqSm" src="https://i.imgur.com/sWEQ4sr.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/f4bMqSm.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Gohan &amp; Trunks (Youth)</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/544" title="Vados - DBL59-03E">
+														<img class="trs0" transform="" src="https://i.imgur.com/lKPwBVs.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Vados</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/458" title="Fasha - DBL43-03E">
+														<img class="trs0" transform="" src="https://i.imgur.com/hfdiF2k.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Fasha</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/457" title="Tora - DBL43-02E">
+														<img class="trs0" transform="" src="https://i.imgur.com/wq1dIcM.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Tora</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/530" title="Super Saiyan Kale (Berserk) - DBL56-03E">
+														<img class="trs0" transform="" src="https://i.imgur.com/rWIXhTu.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Super Saiyan Kale (Berserk)</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/334" title="Gokua - DBL36-05E">
+														<img class="trs0 fadeloop2" transform="LTKu7dP" src="https://i.imgur.com/iSk12wP.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/LTKu7dP.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Gokua</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/485" title="Final Form Cooler - DBL48-04E">
+														<img class="trs0" transform="" src="https://i.imgur.com/F6PJ30B.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Final Form Cooler</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/529" title="Bergamo - DBL56-04E">
+														<img class="trs0" transform="" src="https://i.imgur.com/ZLmMBsu.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Bergamo</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/422" title="Monrei - DBL-EVT-54E">
+														<img class="trs0" transform="" src="https://i.imgur.com/4TX2Xp5.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Monrei</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/362" title="Yurin - DBL47-03E">
+														<img class="trs0" transform="" src="https://i.imgur.com/RwG5rfs.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Yurin</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/484" title="Turles - DBL48-03E">
+														<img class="trs0" transform="" src="https://i.imgur.com/LYJI8i4.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Turles</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/262" title="Legendary Super Saiyan Broly - DBL17-02E">
+														<img class="trs0" transform="" src="https://i.imgur.com/0TkpgKg.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Legendary Super Saiyan Broly</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/420" title="Raspberry - DBL-EVT-52E">
+														<img class="trs0" transform="" src="https://i.imgur.com/8lhSg7c.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Raspberry</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/464" title="Toppo - DBL44-03E">
+														<img class="trs0" transform="" src="https://i.imgur.com/uyOMvSl.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Toppo</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/312" title="Kale - DBL47-04E">
+														<img class="trs0" transform="" src="https://i.imgur.com/CJ5WgTh.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Kale</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/436" title="Kaiwareman - DBL-EVT-32E">
+														<img class="trs0" transform="" src="https://i.imgur.com/IWzMn0O.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Kaiwareman</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/324" title="Gogeta - DBL24-02E">
+														<img class="trs0" transform="" src="https://i.imgur.com/MQ0s3KC.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Gogeta</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/437" title="Kyukonman - DBL-EVT-33E">
+														<img class="trs0" transform="" src="https://i.imgur.com/wpyqmMq.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Kyukonman</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/465" title="Dyspo - DBL44-04E">
+														<img class="trs0" transform="" src="https://i.imgur.com/VuE01ia.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Dyspo</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/453" title="Mai - DBL41-06E">
+														<img class="trs0" transform="" src="https://i.imgur.com/KhHGfOg.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Mai</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/423" title="Guprei - DBL-EVT-55E">
+														<img class="trs0" transform="" src="https://i.imgur.com/79eThu9.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Guprei</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/398" title="Super Saiyan 3 Gotenks - DBL35-05E">
+														<img class="trs0" transform="" src="https://i.imgur.com/9eoV7fN.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Super Saiyan 3 Gotenks</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/434" title="Yajirobe - DBL39-02E">
+														<img class="trs0" transform="" src="https://i.imgur.com/Gz0ktDY.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Yajirobe</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/421" title="Navel - DBL-EVT-53E">
+														<img class="trs0" transform="" src="https://i.imgur.com/OOFKY12.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Navel</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/416" title="Ramon - DBL-EVT-26E">
+														<img class="trs0" transform="" src="https://i.imgur.com/PYSHM22.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Ramon</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/332" title="Bido - DBL36-06E">
+														<img class="trs0" transform="" src="https://i.imgur.com/g2VuVdX.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Bido</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/372" title="Broly - DBL30-04E">
+														<img class="trs0" transform="" src="https://i.imgur.com/9Ans4Lx.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Broly</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/347" title="Super Saiyan 2 Goku - DBL26-05E">
+														<img class="trs0" transform="" src="https://i.imgur.com/UhY2pCV.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Super Saiyan 2 Goku</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/418" title="Nabana - DBL-EVT-28E">
+														<img class="trs0" transform="" src="https://i.imgur.com/yzYhgtj.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Nabana</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/419" title="Roberry - DBL-EVT-29E">
+														<img class="trs0" transform="" src="https://i.imgur.com/Eq68Xpv.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Roberry</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/365" title="Full Power Boujack - DBL29-03E">
+														<img class="trs0" transform="" src="https://i.imgur.com/6BjUf0F.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Full Power Boujack</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/394" title="Super Baby 2 - DBL35-07E">
+														<img class="trs0" transform="" src="https://i.imgur.com/WAnIlnI.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Super Baby 2</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/435" title="Saibaman - DBL-EVT-31E">
+														<img class="trs0" transform="" src="https://i.imgur.com/TBG3PhN.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Saibaman</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/170" title="Whis - DBL13-05E">
+														<img class="trs0" transform="" src="https://i.imgur.com/edrJakp.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Whis</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/283" title="Super Trunks - DBL24-06E">
+														<img class="trs0" transform="" src="https://i.imgur.com/dNoY61P.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Super Trunks</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/415" title="Appule - DBL-EVT-25E">
+														<img class="trs0" transform="" src="https://i.imgur.com/tpt7SZE.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Appule</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/393" title="Super #17 - DBL35-06E">
+														<img class="trs0" transform="" src="https://i.imgur.com/YnmyDI2.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Super #17</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/439" title="Jinkouman - DBL-EVT-35E">
+														<img class="trs0" transform="" src="https://i.imgur.com/xUqADxV.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Jinkouman</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/249" title="Nail - DBL16-03E">
+														<img class="trs0" transform="" src="https://i.imgur.com/ydFVLAB.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Nail</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/410" title="Zangya - DBL36-04E">
+														<img class="trs0" transform="" src="https://i.imgur.com/lrJwTc3.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Zangya</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/348" title="Videl - DBL26-07E">
+														<img class="trs0" transform="" src="https://i.imgur.com/hyonPVL.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Videl</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/426" title="Super Saiyan Goku - DBL37-01E">
+														<img class="trs0" transform="" src="https://i.imgur.com/xJ0QFGO.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Super Saiyan Goku</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/117" title="Majin Buu: Good - DBL21-04E">
+														<img class="trs0" transform="" src="https://i.imgur.com/1EuCRzt.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Majin Buu: Good</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/333" title="Bujin - DBL36-07E">
+														<img class="trs0" transform="" src="https://i.imgur.com/VhbMxF8.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Bujin</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/351" title="Ribrianne - DBL27-07E">
+														<img class="trs0" transform="" src="https://i.imgur.com/NxxuxXV.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Ribrianne</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/438" title="Tennenman - DBL-EVT-34E">
+														<img class="trs0" transform="" src="https://i.imgur.com/pv8MekB.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Tennenman</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/279" title="Buu: Super - DBL19-04E">
+														<img class="trs0" transform="" src="https://i.imgur.com/smXbZyj.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Buu: Super</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/354" title="Gohan (Kid) - DBL27-01E">
+														<img class="trs0" transform="" src="https://i.imgur.com/JFGXA0k.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Gohan (Kid)</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/329" title="Tien - DBL25-03E">
+														<img class="trs0" transform="" src="https://i.imgur.com/tLxSwJy.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Tien</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/181" title="Chi-Chi - DBL21-03E">
+														<img class="trs0" transform="" src="https://i.imgur.com/A1reIds.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Chi-Chi</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/440" title="Copyman - DBL-EVT-36E">
+														<img class="trs0" transform="" src="https://i.imgur.com/F1nsO1e.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Copyman</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/376" title="Master Roshi - DBL31-04E">
+														<img class="trs0" transform="" src="https://i.imgur.com/SxCwR49.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Master Roshi</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/367" title="Final Form Frieza - DBL29-05E">
+														<img class="trs0" transform="" src="https://i.imgur.com/M81FSDX.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Final Form Frieza</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/146" title="King of the Demon Realm Dabura - DBL26-04E">
+														<img class="trs0" transform="" src="https://i.imgur.com/NiDOg1J.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">King of the Demon Realm Dabura</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/417" title="Orlen - DBL-EVT-27E">
+														<img class="trs0" transform="" src="https://i.imgur.com/wbAkYJl.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Orlen</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/317" title="Hit - DBL25-06E">
+														<img class="trs0" transform="" src="https://i.imgur.com/uAg4dHW.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Hit</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/222" title="Chilled - DBL13-07E">
+														<img class="trs0" transform="" src="https://i.imgur.com/flJEouT.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Chilled</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/331" title="Yamcha - DBL25-02E">
+														<img class="trs0" transform="" src="https://i.imgur.com/5t76pSz.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Yamcha</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/391" title="Baby Vegeta - DBL34-05E">
+														<img class="trs0" transform="" src="https://i.imgur.com/JMTFkhr.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Baby Vegeta</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/263" title="Android #13 - DBL17-04E">
+														<img class="trs0" transform="" src="https://i.imgur.com/Udp1AO2.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Android #13</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/114" title="Super Saiyan Goku - DBL26-01E">
+														<img class="trs0" transform="" src="https://i.imgur.com/Tc27QOM.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Super Saiyan Goku</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/247" title="Gohan (Kid) - DBL16-11E">
+														<img class="trs0" transform="" src="https://i.imgur.com/MlPoj7h.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Gohan (Kid)</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/280" title="Goku - DBL19-06E">
+														<img class="trs0" transform="" src="https://i.imgur.com/l1my0Bo.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Goku</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/382" title="Trunks (Youth) - DBL32-03E">
+														<img class="trs0" transform="" src="https://i.imgur.com/5FgwkLW.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Trunks (Youth)</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/307" title="Shugesh - DBL22-07E">
+														<img class="trs0" transform="" src="https://i.imgur.com/6MXlSyJ.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Shugesh</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/325" title="Super Vegeta - DBL24-04E">
+														<img class="trs0" transform="" src="https://i.imgur.com/zdaT8P7.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Super Vegeta</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/308" title="Borgos - DBL22-06E">
+														<img class="trs0" transform="" src="https://i.imgur.com/VHAkavu.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Borgos</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/233" title="Recoome - DBL14-06E">
+														<img class="trs0" transform="" src="https://i.imgur.com/FEKYG6B.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Recoome</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/387" title="Goku Black - DBL34-02E">
+														<img class="trs0" transform="" src="https://i.imgur.com/QhAu2Eh.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Goku Black</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/209" title="Zangya - DBL15-04E">
+														<img class="trs0" transform="" src="https://i.imgur.com/pyUuR4F.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Zangya</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/196" title="Majin Buu: Pure Evil - DBL10-05E">
+														<img class="trs0" transform="" src="https://i.imgur.com/7fKv5An.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Majin Buu: Pure Evil</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a2" href="/characters/235" title="Captain Ginyu - DBL14-10E">
+														<img class="trs0" transform="" src="https://i.imgur.com/LXHQTdG.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Captain Ginyu</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a2" href="/characters/330" title="Krillin - DBL25-01E">
+														<img class="trs0" transform="" src="https://i.imgur.com/6AjUy4M.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Krillin</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/399" title="Super Saiyan Rosé Goku Black - DBL35-09E">
+														<img class="trs0" transform="" src="https://i.imgur.com/o68fEdN.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Super Saiyan Rosé Goku Black</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/352" title="Kakunsa - DBL28-04E">
+														<img class="trs0" transform="" src="https://i.imgur.com/lgjpfCg.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Kakunsa</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/134" title="Zamasu - DBL16-05E">
+														<img class="trs0" transform="" src="https://i.imgur.com/GVBjcWo.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Zamasu</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/291" title="Android #14 - DBL20-03E">
+														<img class="trs0" transform="" src="https://i.imgur.com/Ldmncwz.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Android #14</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/282" title="2nd Form Frieza - DBL18-02E">
+														<img class="trs0" transform="" src="https://i.imgur.com/pWgyGHk.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">2nd Form Frieza</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/284" title="Hyper Meta-Rilldo - DBL19-09E">
+														<img class="trs0" transform="" src="https://i.imgur.com/d9sKtjp.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Hyper Meta-Rilldo</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/316" title="Goku (Youth) - DBL24-14E">
+														<img class="trs0" transform="" src="https://i.imgur.com/P21ohQz.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Goku (Youth)</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/210" title="Videl - DBL12-03E">
+														<img class="trs0" transform="" src="https://i.imgur.com/8AyJ8xN.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Videl</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/248" title="Krillin - DBL16-12E">
+														<img class="trs0" transform="" src="https://i.imgur.com/0wLxAmz.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Krillin</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a4" href="/characters/323" title="Syn Shenron - DBL24-10E">
+														<img class="trs0" transform="" src="https://i.imgur.com/JLox2ER.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Syn Shenron</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/292" title="Android #15 - DBL20-04E">
+														<img class="trs0" transform="" src="https://i.imgur.com/LvAgxS5.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Android #15</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/83" title="Trunks - DBL11-03E">
+														<img class="trs0" transform="" src="https://i.imgur.com/Tlx3N9G.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Trunks</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/214" title="Boujack - DBL15-03E">
+														<img class="trs0" transform="" src="https://i.imgur.com/XgbUec9.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Boujack</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/353" title="Rozie - DBL28-07E">
+														<img class="trs0" transform="" src="https://i.imgur.com/0GinQ8T.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Rozie</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/281" title="Trunks (Kid) - DBL19-02E">
+														<img class="trs0" transform="" src="https://i.imgur.com/ya9ve5I.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Trunks (Kid)</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/31" title="3rd Form Frieza - DBL01-43E">
+														<img class="trs0" transform="" src="https://i.imgur.com/V1pMkel.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">3rd Form Frieza</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/221" title="Super Janemba - DBL13-08E">
+														<img class="trs0" transform="" src="https://i.imgur.com/yt0EVcw.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Super Janemba</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/104" title="Perfect Form Cell - DBL23-03E">
+														<img class="trs0" transform="" src="https://i.imgur.com/a0W5Zxl.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Perfect Form Cell</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/202" title="Super Namekian Lord Slug - DBL11-10E">
+														<img class="trs0" transform="" src="https://i.imgur.com/a2Batvz.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Super Namekian Lord Slug</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/234" title="Jeice - DBL14-08E">
+														<img class="trs0" transform="" src="https://i.imgur.com/GDmI6bw.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Jeice</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/269" title="Shisami - DBL18-04E">
+														<img class="trs0" transform="" src="https://i.imgur.com/t8er6Fu.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Shisami</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/223" title="God of Destruction Beerus - DBL13-04E">
+														<img class="trs0" transform="" src="https://i.imgur.com/PCRn4XJ.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">God of Destruction Beerus</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a4" href="/characters/28" title="1st Form Frieza - DBL01-40E">
+														<img class="trs0" transform="" src="https://i.imgur.com/3vwS745.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">1st Form Frieza</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a2" href="/characters/194" title="Trunks (Teen) - DBL10-07E">
+														<img class="trs0" transform="" src="https://i.imgur.com/lDkW5TC.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Trunks (Teen)</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/138" title="Vegeta - DBL03-04E">
+														<img class="trs0" transform="" src="https://i.imgur.com/3vFLMKP.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Vegeta</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a1" href="/characters/203" title="Bulma (Youth) - DBL11-05E">
+														<img class="trs0" transform="" src="https://i.imgur.com/5XHjwUJ.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Bulma (Youth)</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/195" title="Tien - DBL10-08E">
+														<img class="trs0" transform="" src="https://i.imgur.com/ZZLXIjD.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Tien</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/84" title="Demon King Piccolo - DBL05-09E">
+														<img class="trs0" transform="" src="https://i.imgur.com/zJ62PFm.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Demon King Piccolo</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/171" title="Gohan - DBL08-06E">
+														<img class="trs0" transform="" src="https://i.imgur.com/hsosOm8.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Gohan</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a4" href="/characters/197" title="Super Saiyan Vegeta - DBL10-04E">
+														<img class="trs0" transform="" src="https://i.imgur.com/e30FI8p.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Super Saiyan Vegeta</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/232" title="Burter - DBL14-07E">
+														<img class="trs0" transform="" src="https://i.imgur.com/fq5r3Vn.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Burter</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/159" title="Tora - DBL08-08E">
+														<img class="trs0" transform="" src="https://i.imgur.com/POVbDKh.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Tora</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/54" title="Turles - DBL02-14E">
+														<img class="trs0" transform="" src="https://i.imgur.com/cMq1SfZ.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Turles</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/136" title="Android #17 - DBL08-04E">
+														<img class="trs0" transform="" src="https://i.imgur.com/bxDuok6.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Android #17</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/137" title="Android #18 - DBL08-05E">
+														<img class="trs0" transform="" src="https://i.imgur.com/x0bsuTG.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Android #18</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/8" title="Tien - DBL01-11E">
+														<img class="trs0" transform="" src="https://i.imgur.com/ggCLu5y.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Tien</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/18" title="Vegeta - DBL01-39E">
+														<img class="trs0" transform="" src="https://i.imgur.com/FTrz2Sm.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Vegeta</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/155" title="Pan: Honey - DBL08-07E">
+														<img class="trs0" transform="" src="https://i.imgur.com/EOCJ1zb.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Pan: Honey</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/106" title="Android #16 - DBL06-09E">
+														<img class="trs0" transform="" src="https://i.imgur.com/yAsj4Jv.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Android #16</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/231" title="Guldo - DBL14-09E">
+														<img class="trs0" transform="" src="https://i.imgur.com/LSYBFeI.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Guldo</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/178" title="Caulifla - DBL09-02E">
+														<img class="trs0" transform="" src="https://i.imgur.com/p0ghfjY.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Caulifla</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/158" title="Fasha - DBL08-09E">
+														<img class="trs0" transform="" src="https://i.imgur.com/F44NduM.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Fasha</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/96" title="2nd Form Cell - DBL04-02E">
+														<img class="trs0" transform="" src="https://i.imgur.com/wcgQ14B.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">2nd Form Cell</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a1" href="/characters/17" title="Fused with Nail Piccolo - DBL01-37E">
+														<img class="trs0" transform="" src="https://i.imgur.com/PwqN5Me.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Fused with Nail Piccolo</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/5" title="Krillin - DBL01-33E">
+														<img class="trs0" transform="" src="https://i.imgur.com/lWM9QM4.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Krillin</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/154" title="Super Saiyan Trunks (Teen) - DBL07-03E">
+														<img class="trs0" transform="" src="https://i.imgur.com/U8Cy2pY.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Super Saiyan Trunks (Teen)</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/130" title="Mai - DBL09-08E">
+														<img class="trs0" transform="" src="https://i.imgur.com/ZntANuu.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Mai</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/119" title="Cell Jr. - DBL06-05E">
+														<img class="trs0" transform="" src="https://i.imgur.com/naItK6C.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Cell Jr.</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/118" title="Gohan (Youth) - DBL06-03E">
+														<img class="trs0" transform="" src="https://i.imgur.com/33kFigj.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Gohan (Youth)</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/156" title="Super Saiyan Vegeta - DBL07-02E">
+														<img class="trs0" transform="" src="https://i.imgur.com/mbRsfPN.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Super Saiyan Vegeta</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/7" title="Yamcha - DBL01-38E">
+														<img class="trs0" transform="" src="https://i.imgur.com/ouLUEPM.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Yamcha</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/100" title="Cooler - DBL07-06E">
+														<img class="trs0" transform="" src="https://i.imgur.com/53qSmZc.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Cooler</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/99" title="Thouser - DBL08-11E">
+														<img class="trs0" transform="" src="https://i.imgur.com/qtfHy2a.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Thouser</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/161" title="Cabba - DBL03-11E">
+														<img class="trs0" transform="" src="https://i.imgur.com/LpdIrLq.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Cabba</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/102" title="Trunks (Kid) - DBL05-04E">
+														<img class="trs0" transform="" src="https://i.imgur.com/rfIlFlJ.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Trunks (Kid)</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/33" title="Mercenary Tao - DBL01-31E">
+														<img class="trs0" transform="" src="https://i.imgur.com/0DuZd02.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Mercenary Tao</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/103" title="Goten (Kid) - DBL05-02E">
+														<img class="trs0" transform="" src="https://i.imgur.com/yt3qXiH.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Goten (Kid)</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/92" title="Dodoria - DBL04-09E">
+														<img class="trs0" transform="" src="https://i.imgur.com/RdIQ8l8.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Dodoria</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/37" title="Final Form Frost - DBL01-46E">
+														<img class="trs0" transform="" src="https://i.imgur.com/dq7ULpr.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Final Form Frost</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/65" title="Master Roshi - DBL04-13E">
+														<img class="trs0" transform="" src="https://i.imgur.com/MPcCPAs.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Master Roshi</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/87" title="Bardock - DBL04-06E">
+														<img class="trs0" transform="" src="https://i.imgur.com/6lgZvCN.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Bardock</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/86" title="1st Form Frieza - DBL04-07E">
+														<img class="trs0" transform="" src="https://i.imgur.com/B3zZTQP.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">1st Form Frieza</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/9" title="Chiaotzu - DBL01-12E">
+														<img class="trs0" transform="" src="https://i.imgur.com/ymrgVn2.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Chiaotzu</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/91" title="Zarbon - DBL04-08E">
+														<img class="trs0" transform="" src="https://i.imgur.com/p7K6Ili.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Zarbon</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/53" title="Vegeta - DBL02-12E">
+														<img class="trs0" transform="" src="https://i.imgur.com/BDiWFAg.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Vegeta</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/85" title="Pan - DBL04-12E">
+														<img class="trs0" transform="" src="https://i.imgur.com/jC91itd.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Pan</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/68" title="Android #18 - DBL03-07E">
+														<img class="trs0" transform="" src="https://i.imgur.com/0J8eGbc.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Android #18</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a0" href="/characters/71" title="Android #17 - DBL03-16E">
+														<img class="trs0" transform="" src="https://i.imgur.com/idlqy9W.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Android #17</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a4" href="/characters/90" title="Raditz - DBL01-21E">
+														<img class="trs0" transform="" src="https://i.imgur.com/b09hrI2.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Raditz</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a4" href="/characters/0" title="Goku - DBL01-02E">
+														<img class="trs0" transform="" src="https://i.imgur.com/ixgV6dI.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Goku</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/48" title="Android #20 - DBL02-09E">
+														<img class="trs0" transform="" src="https://i.imgur.com/xGBQ0nX.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Android #20</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/12" title="Nappa - DBL01-19E">
+														<img class="trs0" transform="" src="https://i.imgur.com/pY815ao.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Nappa</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a0" href="/characters/49" title="Android #19 - DBL02-07E">
+														<img class="trs0" transform="" src="https://i.imgur.com/LmT3Q65.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Android #19</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/52" title="Trunks (Teen) - DBL02-03E">
+														<img class="trs0" transform="" src="https://i.imgur.com/2BNEOOz.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">Trunks (Teen)</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/64" title="1st Form Cell - DBL03-08E">
+														<img class="trs0" transform="" src="https://i.imgur.com/3xaRoOV.png">
+														<div class="ot rarity rs1"></div>
+							<div class="ot over">1st Form Cell</div>
+																					<div class="ot zenkaier">zenkaier</div>
+														
+						</a>
+											<a class="icon a0" href="/characters/182" title="Videl - DBL24-07H">
+														<img class="trs0" transform="" src="https://i.imgur.com/Jvv22SQ.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Videl</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/309" title="Mercenary Tao - DBL24-12H">
+														<img class="trs0" transform="" src="https://i.imgur.com/QiTVrmi.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Mercenary Tao</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/250" title="Nail - DBL16-04H">
+														<img class="trs0" transform="" src="https://i.imgur.com/TIvyRvK.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Nail</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/105" title="Thouser - DBL08-12H">
+														<img class="trs0" transform="" src="https://i.imgur.com/G8CWEnk.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Thouser</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/120" title="Turles - DBL06-08H">
+														<img class="trs0" transform="" src="https://i.imgur.com/kXLQ9Zo.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Turles</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/122" title="Krillin - DBL06-04H">
+														<img class="trs0" transform="" src="https://i.imgur.com/lYyexOJ.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Krillin</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/121" title="Super Saiyan Goku - DBL06-02H">
+														<img class="trs0" transform="" src="https://i.imgur.com/StmMypX.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Super Saiyan Goku</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/139" title="2nd Form Cell - DBL04-03H">
+														<img class="trs0" transform="" src="https://i.imgur.com/k5Vizgl.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">2nd Form Cell</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/212" title="World Champion Hercule - DBL24-11H">
+														<img class="trs0" transform="" src="https://i.imgur.com/lSyCiwM.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">World Champion Hercule</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/13" title="Nappa - DBL01-20H">
+														<img class="trs0" transform="" src="https://i.imgur.com/uysrAgd.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Nappa</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/73" title="1st Form Cell - DBL03-09H">
+														<img class="trs0" transform="" src="https://i.imgur.com/YDrISGN.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">1st Form Cell</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/72" title="Goku - DBL03-02H">
+														<img class="trs0" transform="" src="https://i.imgur.com/XTl070c.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Goku</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/40" title="Fused with Nail Piccolo - DBL01-08H">
+														<img class="trs0" transform="" src="https://i.imgur.com/B0OBWpy.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Fused with Nail Piccolo</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/10" title="Raditz - DBL01-22H">
+														<img class="trs0" transform="" src="https://i.imgur.com/bLlcKX2.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Raditz</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/24" title="Recoome - DBL01-27H">
+														<img class="trs0" transform="" src="https://i.imgur.com/W3qtBFn.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Recoome</div>
+																					
+						</a>
+											<a class="icon a70" href="/characters/9000" title="Shallot - DBL00-01">
+														<img class="trs0 fadeloop2" transform="Tyo67Vo" src="https://i.imgur.com/FQg6GL1.png"><img class="trs0 transform fadeloop" src="https://i.imgur.com/Tyo67Vo.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Shallot</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/19" title="Vegeta - DBL01-18H">
+														<img class="trs0" transform="" src="https://i.imgur.com/v6W8pEj.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Vegeta</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/39" title="Pan - DBL01-32H">
+														<img class="trs0" transform="" src="https://i.imgur.com/pvamo3n.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Pan</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/6" title="Krillin - DBL01-09H">
+														<img class="trs0" transform="" src="https://i.imgur.com/gA2C3CM.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Krillin</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/69" title="Cabba - DBL03-12H">
+														<img class="trs0" transform="" src="https://i.imgur.com/AubN8qH.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Cabba</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/26" title="Captain Ginyu - DBL01-45H">
+														<img class="trs0" transform="" src="https://i.imgur.com/xbxoPWq.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Captain Ginyu</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/110" title="Cell Jr. - DBL04-05H">
+														<img class="trs0" transform="" src="https://i.imgur.com/KpuwCJ1.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Cell Jr.</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/42" title="Tien - DBL01-13H">
+														<img class="trs0" transform="" src="https://i.imgur.com/RHrFYhB.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Tien</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/20" title="Zarbon - DBL01-25H">
+														<img class="trs0" transform="" src="https://i.imgur.com/DRmaj8D.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Zarbon</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/36" title="Jaco - DBL01-15H">
+														<img class="trs0" transform="" src="https://i.imgur.com/Typ6Ttq.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Jaco</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/1" title="Goku - DBL01-01H">
+														<img class="trs0" transform="" src="https://i.imgur.com/OuctM1J.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Goku</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/30" title="2nd Form Frieza - DBL01-42H">
+														<img class="trs0" transform="" src="https://i.imgur.com/P4oA9gf.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">2nd Form Frieza</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/43" title="Chiaotzu - DBL01-14H">
+														<img class="trs0" transform="" src="https://i.imgur.com/mRC3iiW.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Chiaotzu</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/70" title="Master Roshi - DBL04-14H">
+														<img class="trs0" transform="" src="https://i.imgur.com/YJXaNcV.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Master Roshi</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/44" title="Final Form Frost - DBL01-47H">
+														<img class="trs0" transform="" src="https://i.imgur.com/Ggf6n2U.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Final Form Frost</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/11" title="Saibaman - DBL01-23H">
+														<img class="trs0" transform="" src="https://i.imgur.com/Q6mjUOg.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Saibaman</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/59" title="Jaco - DBL02-05H">
+														<img class="trs0" transform="" src="https://i.imgur.com/KkZAfLL.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Jaco</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/22" title="Guldo - DBL01-30H">
+														<img class="trs0" transform="" src="https://i.imgur.com/530lS63.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Guldo</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/58" title="Saibaman - DBL02-06H">
+														<img class="trs0" transform="" src="https://i.imgur.com/vAHiA3T.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Saibaman</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/3" title="Gohan (Kid) - DBL01-06H">
+														<img class="trs0" transform="" src="https://i.imgur.com/sYVN5GS.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Gohan (Kid)</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/29" title="1st Form Frieza - DBL01-24H">
+														<img class="trs0" transform="" src="https://i.imgur.com/2ZnlhHb.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">1st Form Frieza</div>
+																					
+						</a>
+											<a class="icon a1" href="/characters/57" title="Yamcha - DBL02-04H">
+														<img class="trs0" transform="" src="https://i.imgur.com/1hu50uz.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Yamcha</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/41" title="Yamcha - DBL01-10H">
+														<img class="trs0" transform="" src="https://i.imgur.com/ImaqOG8.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Yamcha</div>
+																					
+						</a>
+											<a class="icon a0" href="/characters/21" title="Dodoria - DBL01-26H">
+														<img class="trs0" transform="" src="https://i.imgur.com/nDTXRaR.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Dodoria</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/56" title="Android #19 - DBL02-08H">
+														<img class="trs0" transform="" src="https://i.imgur.com/lkB3kTg.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Android #19</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/25" title="Jeice - DBL01-28H">
+														<img class="trs0" transform="" src="https://i.imgur.com/NKiu0Mx.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Jeice</div>
+																					
+						</a>
+											<a class="icon a4" href="/characters/23" title="Burter - DBL01-29H">
+														<img class="trs0" transform="" src="https://i.imgur.com/rb6TsSk.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Burter</div>
+																					
+						</a>
+											<a class="icon a2" href="/characters/55" title="Android #20 - DBL02-10H">
+														<img class="trs0" transform="" src="https://i.imgur.com/7tuzTsZ.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Android #20</div>
+																					
+						</a>
+											<a class="icon a3" href="/characters/34" title="Pikkon - DBL01-34H">
+														<img class="trs0" transform="" src="https://i.imgur.com/3D6eOya.png">
+														<div class="ot rarity rs0"></div>
+							<div class="ot over">Pikkon</div>
+																					
+						</a>
+										</div>
