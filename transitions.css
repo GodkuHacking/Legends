@@ -2,7 +2,7 @@
   position: relative;
   width: 300px;
   height: 300px;
-  transition: opacity 1s ease;
+  transition: opacity 1s ease-in-out;
 }
 
 @keyframes fadeloop2 {
