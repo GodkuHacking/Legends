@@ -123,7 +123,7 @@
     </div>
 
 <div class="character">
-  <img class="fade-transition trs0" id="gamma" src="https://i.imgur.com/vq0dg2d.png" style="opacity: 1;">
+  <img class="fade-transition trs0" id="gohan" src="https://i.imgur.com/vq0dg2d.png" style="opacity: 1;">
   <a href="characters/564.html">
     <p class="character-name">Gohan (Kid) & Krillin</p>
   </a>
@@ -131,19 +131,20 @@
 
 <script>
   window.onload = function() {
-    const gamma = document.getElementById('gamma');
+    const gohan = document.getElementById('gohan');
 
     const images = ["https://i.imgur.com/vq0dg2d.png", "https://i.imgur.com/vKO7CwJ.png"];
     let currentImageIndex = 0;
 
     const switchImage = () => {
       currentImageIndex = (currentImageIndex + 1) % images.length;
-      gamma.src = images[currentImageIndex];
+      gohan.src = images[currentImageIndex];
     };
 
     setInterval(switchImage, 5000);
   };
 </script>
+
 
 
     <div class="character">
