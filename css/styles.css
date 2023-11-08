@@ -1,28 +1,39 @@
 /* Body styles */
+
 body {
-  background-color: #1a1a1a;
-  color: #ffffff;
-  font-family: 'Arial', sans-serif;
+  background-color: #1D1D1D;
+  color: #F2F2F2;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Character list styles */
+
 .character-list {
-  display: flex;
+  display: flex;  
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 20px;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 20px;
 }
 
-/* Character card styles */
+/* Character card styles */ 
+
 .character {
+  background-color: #222222;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
   margin: 20px;
+  padding: 20px;
   text-align: center;
+  width: 300px;
 }
 
 .character img {
-  width: 200px;
-  height: 200px;
   border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
   transition: transform 0.3s;
 }
 
@@ -31,19 +42,12 @@ body {
 }
 
 .character-name {
-  font-size: 18px;
-  margin-top: 10px;
+  color: #FFD700;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
-/* Animation for character Gohan */
-.gohan {
-  transition: opacity 0.5s;
-}
-
-/* Animation for character Gamma */
-#gamma {
-  transition: opacity 0.5s;
-}
 
 /* Dark theme for the element */
 .element {
