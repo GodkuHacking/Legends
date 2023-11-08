@@ -3,138 +3,294 @@
 
 <head>
   <title>Buu: Kid</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="charas/538.png">
+
+  <style>
+    body {
+      background-color: #1c1c1c;
+      color: #ddd;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1,
+    h2 {
+      color: #ff7f27;
+      text-align: center;
+    }
+
+    .char-banner {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .char-banner img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px #000;
+    }
+
+    .rarity {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      width: 120px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 10px 0;
+      justify-content: center;
+    }
+
+    .tag {
+      background-color: #333;
+      border-radius: 20px;
+      color: #ddd;
+      padding: 8px 15px;
+      margin: 5px;
+    }
+
+    .stat-group {
+      width: 100%;
+      max-width: 300px;
+      padding: 20px;
+      border-radius: 10px;
+      background: #333;
+    }
+
+    .stat-group h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .stat-group div {
+      font-size: 14px;
+      margin: 6px 0;
+    }
+
+    .stats,
+    .abilities {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .stat-group,
+    .ability {
+      flex: 1 1 45%;
+      max-width: 300px;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+      background: #333;
+    }
+
+    .stat-group h2,
+    .ability h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .stat-group {
+      width: 45%;
+    }
+
+    .stat-group:first-child {
+      margin-right: 20px;
+    }
+
+    .stat-group:nth-child(2) {
+      margin-left: 20px;
+    }
+
+    .container {
+      position: relative;
+    }
+
+    .banner-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-image: url('https://dblegends.net/assets/scouter_bg_ultra.webp');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.5;
+      border-radius: 10px;
+    }
+  </style>
+
 </head>
 
 <body>
 
-  <div class="chara_banner">
-    <img src="https://i.imgur.com/2KBo8bB.png" alt="Buu: Kid">
-    <img src="https://nah3ohdioj7ye3sh.dblgnds.channel.or.jp/information/en/img/common/rarity_3.png" alt="Rarity 3"
-      style="position: absolute; bottom: 10px; right: 10px; width: 120px; height: 40px; z-index: 1;">
+  <div class="container">
+
     <h1>Buu: Kid</h1>
+    <div class="char-banner">
+      <div class="banner-background"></div>
+      <img src="https://i.imgur.com/2KBo8bB.png" alt="Buu: Kid">
+      <img class="rarity" src="rarity_3.png" alt="Rarity 3">
+    </div>
+
+<ul class="tags">
+  <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="Regeneration">Regeneration</li>
+  <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="Absorption">Absorption</li>
+  <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="Powerful Opponent">Powerful Opponent</li>
+  <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="Unknown">Unknown</li>
+  <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="ULTRA">ULTRA</li>
+  <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="Defense Type">Defense Type</li>
+  <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="YEL">YEL</li>
+  <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="Majin Buu Saga (Z)">Majin Buu Saga (Z)</li>
+  <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="Majin Buu">Majin Buu</li>
+  <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="Strike Back">Strike Back</li>
+  <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="Assault">Assault</li>
+  <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="Armored">Armored</li>
+  <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="Strike Arts">Strike Arts</li>
+  <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="Fast Draw (Multi)">Fast Draw (Multi)</li>
+  <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="Ultimate Arts">Ultimate Arts</li>
+  <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="Special Cover Change (Strike)">Special Cover Change (Strike)</li>
+  <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="Special Cover Change Nullification">Special Cover Change Nullification</li>
+  <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="Unique Gauge">Unique Gauge</li>
+  <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="No Switching">No Switching</li>
+  <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="Endurance">Endurance</li>
+</ul>
+
+
+    <div class="stats">
+
+
+      <div class="stat-group">
+
+        <h2>Other Stats</h2>
+
+        <div>STRIKE ATK: 2.61K</div>
+        <div>STRIKE DEF: 1.7K</div>
+        <div>BLAST ATK: 2.65K</div>
+        <div>BLAST DEF: 1.7K</div>
+        <div>SLICE: 98</div>
+        <div>PIERCE: 99</div>
+        <div>IMPACT: 100</div>
+        <div>EXPLODE: 103</div>
+        <div>VANISH: 2000</div>
+        <div>KI RESTORE: 2542</div>
+        <div>CRITICAL: 1469</div>
+      </div>
+
+    </div>
+
+    <div class="abilities">
+
+      <div class="ability">
+        <h2>Main Ability</h2>
+        <div>Universal-Level Majin Threat<br>
+Draw the Ultimate Arts Card "Universal Destruction" next.
+Restores own health by 25% and Ki by 40.
+Inflicts all enemies with Attribute Downgrade "-40% to Health Restoration" for 20 timer counts.
+Inflicts all enemies with Attribute Downgrade "+30% to Damage Received" for 20 timer counts.
+Inflicts all enemies with Attribute Downgrade "-1 Arts Card Draw Speed level" for 20 timer counts.
+
+Requirements: 25 timer counts must elapse.
+        </div>
+      </div>
+
+      <div class="ability">
+        <h2>Ultra Ability</h2>
+        <div>Resonance of Force (Regeneration)<br>
+If this character is the Leader, applies the following effects to self when battle starts:
+
++30% to damage inflicted (cannot be cancelled).
++30% to Ki Recovery (cannot be cancelled).
+
+If this character is not the Leader, applies the following effects to self per "Tag: Regeneration" battle/support member when battle starts:
+
++5% to damage inflicted (cannot be cancelled).
++5% to Ki Recovery (cannot be cancelled).
+
+*Up to 3 support members will be counted.
+
+
+        </div>
+      </div>
+
+      <div class="ability">
+        <h2>Unique Ability</h2>
+        <div>Reveling in the Fight<br>
+Applies the following effects to self when battle starts:
+
++110% to damage inflicted (cannot be cancelled).
+Reduces damage received by 60% (cannot be cancelled).
+Increases Arts Card Draw Speed by 1 level (cannot be cancelled).
+Applies Attribute Upgrade "-20% to enemy's 'Sustained Damage CUT' effects" (cannot be cancelled).
+Restores own health by 30% only once when it reaches 0 (cannot be cancelled).
++15% to Health Restoration for 60 timer counts (cannot be cancelled).
+Nullifies Attribute Downgrades and Abnormal Conditions for 60 timer counts (cannot be cancelled).
+
+Charges own Unique Gauge over time while this character is on the battlefield or on standby.
+Applies the following effects to self while Unique Gauge is full:
+
++30% to damage inflicted (cannot be cancelled).
+Reduces damage received by 10% (cannot be cancelled).
+-5 to Arts costs (cannot be cancelled).
+Increases Arts Card Draw Speed by 1 level (cannot be cancelled).
+
+If Unique Gauge is full after enemy attack is over, it resets to zero and the following effects occur:
+
+Restores own health by 20%.
++10% to damage inflicted (cannot be cancelled).
+Shortens allies' substitution counts by 2.
+Randomly destroys 2 enemy cards.
+        </div>
+      </div>
+
+      <div class="ability">
+        <h2>Pure and Innocent Evil</h2>
+        <div>Knocks the enemy back to long range if a cover change is performed against their Strike Arts attack (activates during assists).<br>
+Knocks enemy back to long range if a cover change is performed against their Strike Arts attack (activates during assists).
+
+[Comboable Arts]
+Special Move Arts
+
+Applies the following effects to self every time an Arts Card is drawn while this character is on the battlefield:
+
+Restores health by 2%.
+Restores Ki by 10.
+
+Applies the following effects to self every time this character uses a Strike or Blast Arts Card:
+
++10% to Special Move damage inflicted for 10 timer counts.
++10% to Ultimate damage inflicted for 10 timer counts.
++10% to Ki Recovery for 10 timer counts.
+
+The following effects occur when enemy activates Rising Rush while this character is on the battlefield (activates once):
+
+Restores own Vanishing Gauge by 100%.
+Cancels enemy's Attribute Upgrades & Buff Effects.
+
+Applies the following effects to self when 2 allies are defeated:
+
+Charges Unique Gauge by 100%.
+Nullifies enemy's "Restores health when it reaches 0" effects when this character attacks (cannot be cancelled).　
+        </div>
+      </div>
+
+    </div>
+
   </div>
-
-  <h2>ULTRAYELcollections</h2>
-
-  <ul class="tags">
-    <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="Regeneration">Regeneration</li>
-    <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="Absorption">Absorption</li>
-    <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="Powerful Opponent">Powerful Opponent</li>
-    <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="Unknown">Unknown</li>
-    <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="ULTRA">ULTRA</li>
-    <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="Defense Type">Defense Type</li>
-    <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="YEL">YEL</li>
-    <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="Majin Buu Saga (Z)">Majin Buu Saga (Z)</li>
-    <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="Majin Buu Strike Back">Majin Buu Strike Back</li>
-    <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="Assault Armored">Assault Armored</li>
-    <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="Strike Arts Fast Draw (Multi)">Strike Arts Fast Draw (Multi)</li>
-    <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="Ultimate Arts Special Cover Change (Strike)">Ultimate Arts Special Cover
-      Change (Strike)</li>
-    <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="Special Cover Change Nullification">Special Cover Change Nullification</li>
-    <li><img src="https://dblegends.net/assets/icon_elements/Cmn_pltFeatureClass_99.webp" alt="Unique Gauge No Switching Endurance">Unique Gauge No Switching Endurance</li>
-  </ul>
-
-  <h2>STATS</h2>
-
-  <ul>
-    <li>POWER: 10.42K</li>
-    <li>HEALTH: 25.75K</li>
-    <li>STRIKE ATK: 2.61K</li>
-    <li>STRIKE DEF: 1.7K</li>
-    <li>BLAST ATK: 2.65K</li>
-    <li>BLAST DEF: 1.7K</li>
-    <li>SLICE: 98</li>
-    <li>PIERCE: 99</li>
-    <li>IMPACT: 100</li>
-    <li>EXPLODE: 103</li>
-    <li>VANISH: 2000</li>
-    <li>KI RESTORE: 2542</li>
-    <li>CRITICAL: 1469</li>
-  </ul>
-
-  <h2>MAIN ABILITY</h2>
-
-  <p>
-    Universal-Level Majin Threat<br>
-    Draw the Ultimate Arts Card "Universal Destruction" next.<br>
-    Restores own health by 25% and Ki by 40.<br>
-    Inflicts all enemies with Attribute Downgrade "-40% to Health Restoration" for 20 timer counts.<br>
-    Inflicts all enemies with Attribute Downgrade "+30% to Damage Received" for 20 timer counts.<br>
-    Inflicts all enemies with Attribute Downgrade "-1 Arts Card Draw Speed level" for 20 timer counts.<br>
-    <br>
-    Requirements: 25 timer counts must elapse.
-  </p>
-
-  <h2>ULTRA ABILITY</h2>
-
-  <p>
-    Resonance of Force (Regeneration)<br>
-    If this character is the Leader, applies the following effects to self when battle starts:<br>
-    +30% to damage inflicted (cannot be cancelled).<br>
-    +30% to Ki Recovery (cannot be cancelled).<br>
-    <br>
-    If this character is not the Leader, applies the following effects to self per "Tag: Regeneration" battle/support member
-    when battle starts:<br>
-    +5% to damage inflicted (cannot be cancelled).<br>
-    +5% to Ki Recovery (cannot be cancelled).<br>
-    <br>
-    *Up to 3 support members will be counted.
-  </p>
-
-  <h2>UNIQUE ABILITY</h2>
-
-  <p>
-    Reveling in the Fight<br>
-    Applies the following effects to self when battle starts:<br>
-    +110% to damage inflicted (cannot be cancelled).<br>
-    Reduces damage received by 60% (cannot be cancelled).<br>
-    Increases Arts Card Draw Speed by 1 level (cannot be cancelled).<br>
-    Applies Attribute Upgrade "-20% to enemy's 'Sustained Damage CUT' effects" (cannot be cancelled).<br>
-    Restores own health by 30% only once when it reaches 0 (cannot be cancelled).<br>
-    +15% to Health Restoration for 60 timer counts (cannot be cancelled).<br>
-    Nullifies Attribute Downgrades and Abnormal Conditions for 60 timer counts (cannot be cancelled).<br>
-    <br>
-    Charges own Unique Gauge over time while this character is on the battlefield or on standby.<br>
-    Applies the following effects to self while Unique Gauge is full:<br>
-    +30% to damage inflicted (cannot be cancelled).<br>
-    Reduces damage received by 10% (cannot be cancelled).<br>
-    -5 to Arts costs (cannot be cancelled).<br>
-    Increases Arts Card Draw Speed by 1 level (cannot be cancelled).<br>
-    <br>
-    If Unique Gauge is full after the enemy's attack is over, it resets to zero and the following effects occur:<br>
-    Restores own health by 20%.<br>
-    +10% to damage inflicted (cannot be cancelled).<br>
-    Shortens allies' substitution counts by 2.<br>
-    Randomly destroys 2 enemy cards.<br>
-  </p>
-
-  <h2>Pure and Innocent Evil</h2>
-
-  <p>
-    Knocks the enemy back to long range if a cover change is performed against their Strike Arts attack (activates during
-    assists).<br>
-    <br>
-    [Comboable Arts] Special Move Arts<br>
-    <br>
-    Applies the following effects to self every time an Arts Card is drawn while this character is on the battlefield:<br>
-    Restores health by 2%.<br>
-    Restores Ki by 10.<br>
-    <br>
-    Applies the following effects to self every time this character uses a Strike or Blast Arts Card:<br>
-    +10% to Special Move damage inflicted for 10 timer counts.<br>
-    +10% to Ultimate damage inflicted for 10 timer counts.<br>
-    +10% to Ki Recovery for 10 timer counts.<br>
-    <br>
-    The following effects occur when the enemy activates Rising Rush while this character is on the battlefield (activates
-    once):<br>
-    Restores own Vanishing Gauge by 100%.<br>
-    Cancels the enemy's Attribute Upgrades & Buff Effects.<br>
-    <br>
-    Applies the following effects to self when 2 allies are defeated:<br>
-    Charges Unique Gauge by 100%.<br>
-    Nullifies the enemy's "Restores health when it reaches 0" effects when this character attacks (cannot be cancelled).
-  </p>
 
 </body>
 
