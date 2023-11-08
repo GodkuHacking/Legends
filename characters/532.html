@@ -104,14 +104,19 @@
   margin-bottom: 10px;
 }
     
-.stats {
-  display: block; 
-}
-
-.stat-group {
-  padding: 30px; /* More padding = less content width */ 
-}
-
+    .stats {
+      display: flex;
+      justify-content: space-between; /* Added */
+    }
+    .stat-group {
+      width: 45%; /* Updated */
+    }
+    .stat-group:first-child {
+      margin-right: 20px; /* Added */
+    }
+    .stat-group:nth-child(2) { /* Added */
+      margin-left: 20px;
+    }
 
 </style>
   
