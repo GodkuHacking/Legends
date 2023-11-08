@@ -1,53 +1,50 @@
-/* Fancy font */
+/* Use Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-color: #1c1c1c;
+  color: #fff;
 }
 
-/* Round the borders */  
+.character-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
 .character {
+  background-color: #131313;
   border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s;
 }
 
-/* Add background colors */
-.character {
-  background: #f2f2f2;
-}
-
-.character:nth-child(odd) {
-  background: #e6e6e6;
-}
-
-/* Subtle gradients */
-.character {
-  background: linear-gradient(to bottom, #fff, #eee); 
-}
-
-/* Fancy box shadows */
-.character {
-  box-shadow: 
-    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048),  
-    0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12);
-}
-
-/* Scale images on hover */
-.character:hover img {
-  transform: scale(1.05);
-}
-
-/* Animate name on hover */ 
-.character .character-name {
-  transition: transform 0.3s ease; 
-}
-
-.character:hover .character-name {
-  transform: translateY(-5px);
-}
-
-/* Glowing hover effect */
 .character:hover {
-  box-shadow: 0 0 20px #eee;
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
+
+.character img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.character-name {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px;
+  text-align: center;
+  color: #eee;
+  background-color: #1a1a1a;
+}
+
+@media (max-width: 500px) {
+  .character-list {
+    grid-template-columns: 1fr;
+  } 
 }
