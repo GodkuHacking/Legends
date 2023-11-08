@@ -35,12 +35,17 @@
       box-shadow: 0px 0px 10px #000;
     }
 
-    .rarity {
-      position: absolute;
-      bottom: 10px;
-      right: 10px;
-      width: 120px;
-    }
+.char-banner {
+  position: relative;
+}
+
+.rarity {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 120px; 
+}
+
 
     .tags {
       display: flex;
@@ -57,67 +62,65 @@
       margin: 5px;
     }
 
-    .stat-group {
-      width: 100%;
-      max-width: 300px;
-      padding: 20px;
-      border-radius: 10px;
-      background: #333;
-    }
 
-    .stat-group h2 {
-      text-align: center;
-      margin-bottom: 10px;
-    }
+.stat-group {
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #333;
+}
 
-    .stat-group div {
-      font-size: 14px;
-      margin: 6px 0;
-    }
+.stat-group h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
 
-    .stats,
-    .abilities {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+.stat-group div {
+  font-size: 14px;
+  margin: 6px 0;
+}
 
-    .stat-group,
-    .ability {
-      flex: 1 1 45%;
-      max-width: 300px;
-      padding: 20px;
-      margin: 10px;
-      border-radius: 10px;
-      background: #333;
-    }
+.stats, 
+.abilities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-    .stat-group h2,
-    .ability h2 {
-      text-align: center;
-      margin-bottom: 10px;
-    }
+.stat-group,
+.ability {
+  flex: 1 1 45%;
+  max-width: 300px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  background: #333; 
+}
 
+.stat-group h2,
+.ability h2 {
+  text-align: center; 
+  margin-bottom: 10px;
+}
+    
     .stats {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-between; /* Added */
     }
-
     .stat-group {
-      width: 45%;
+      width: 45%; /* Updated */
     }
-
     .stat-group:first-child {
-      margin-right: 20px;
+      margin-right: 20px; /* Added */
     }
-
-    .stat-group:nth-child(2) {
+    .stat-group:nth-child(2) { /* Added */
       margin-left: 20px;
     }
 
-    .container {
-      position: relative;
-    }
+.container {
+  position: relative;
+}
 
     .banner-background {
       position: absolute;
@@ -132,8 +135,9 @@
       opacity: 0.5;
       border-radius: 10px;
     }
-  </style>
-
+    
+</style>
+  
 </head>
 
 <body>
