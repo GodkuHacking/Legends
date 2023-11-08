@@ -3,152 +3,130 @@
 
 <head>
   <title>Super Saiyan Rosé Goku Black</title>
-  <link rel="stylesheet" href="css/styles.css">
+  
   <style>
     body {
-      font-family: 'Arial', sans-serif;
-      background-color: #222;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 20px;
-      margin: 0;
-      font-size: 18px;
+      background-color: #1c1c1c;
+      color: #ddd;
+      font-family: Arial, sans-serif;
     }
-
-    .chara_banner {
+    
+    h1, h2 {
+      color: #ff7f27;
+    }
+    
+    .container {
+      max-width: 800px;  
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .char-banner {
       position: relative;
-      width: 100%;
-      max-width: 680px;
-      height: 200px;
-      margin: 0 auto 40px;
-      border-radius: 5px;
-      overflow: hidden;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+      margin-bottom: 20px; 
     }
-
-    .chara_banner img {
+    
+    .char-banner img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px #000;
     }
-
-    .banner_caption {
+    
+    .rarity {
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      text-align: center;
-      background-color: rgba(0, 0, 0, 0.8);
-      padding: 10px 0;
-      color: #f2f2f2;
-      font-size: 24px;
-      font-family: 'Arial', sans-serif;
+      bottom: 10px; 
+      right: 10px;
+      width: 120px;
     }
-
-    h2 {
-      color: #f2f2f2;
-      font-size: 24px;
-      margin-top: 40px;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      font-size: 18px;
-      margin-top: 20px;
+    
+    .tags {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      flex-wrap: wrap;  
+      margin: 10px 0;
     }
-
-    li {
-      margin: 10px;
-      padding: 15px 20px;
-      border: 1px solid #444;
-      border-radius: 5px;
+    
+    .tag {
       background-color: #333;
+      border-radius: 20px;
+      color: #ddd;
+      padding: 8px 15px;
+      margin: 0 10px 10px 0;
     }
-
-    .stats-box {
-      max-width: 500px;
-      margin: 0 auto 40px;
-      padding: 20px;
-      border: 1px solid #444;
-      border-radius: 5px;
-      background-color: #333;
+    
+    .stats {
+      display: flex;  
+      justify-content: space-between;
     }
-
-    .stats-box h2 {
-      color: #f2f2f2;
-      font-size: 24px;
-      margin-bottom: 20px;
+    
+    .stat-group {
+      width: 45%;
     }
   </style>
+  
 </head>
 
 <body>
-  <div class="chara_banner">
-    <div class="banner_caption">Super Saiyan Rosé Goku Black</div>
-    <img src="https://nah3ohdioj7ye3sh.dblgnds.channel.or.jp/information/en/img/common/rarity_3.png" alt="Rarity 3"
-      style="position: absolute; bottom: 10px; right: 10px; width: 120px; height: 40px; z-index: 1;">
+
+<div class="container">
+
+  <h1>Super Saiyan Rosé Goku Black</h1>
+
+  <div class="char-banner">
     <img src="https://i.imgur.com/1nl9kQn.png" alt="Super Saiyan Rosé Goku Black">
+    <img class="rarity" src="https://nah3ohdioj7ye3sh.dblgnds.channel.or.jp/information/en/img/common/rarity_3.png" alt="Rarity 3">
   </div>
-  
-<div class="stats-box">
-  <h2>TAGS</h2>
-  <ul>
-    <li>Saiyan</li>
-    <li>Future</li>
-    <li>God Ki</li>
-    <li>Super Saiyan Rosé</li>
-    <li>Powerful Opponent</li>
-    <li>Male</li>
-    <li>Melee Type</li>
-    <li>GRN</li>
-    <li>Trunks Saga (S)</li>
-    <li>Goku Black</li>
-    <li>Strike Back Assault</li>
-    <li>Armored</li>
-    <li>Strike Arts</li>
-    <li>Ultimate Arts</li>
-    <li>Special Cover Change (Strike)</li>
-    <li>Special Cover Change Nullification</li>
-    <li>Unfavorable Element Factor Nullification</li>
-    <li>Unique Gauge</li>
-  </ul>
-  
-<div class="stats-box">
-  <h2>STATS</h2>
-  <ul>
-    <li>POWER: 10.32K</li>
-    <li>HEALTH: 26.53K</li>
-    <li>STRIKE ATK: 2.7K</li>
-    <li>STRIKE DEF: 1.62K</li>
-    <li>BLAST ATK: 2.51K</li>
-    <li>BLAST DEF: 1.66K</li>
-    <li>SLICE: 99</li>
-    <li>PIERCE: 100</li>
-    <li>IMPACT: 103</li>
-    <li>EXPLODE: 98</li>
-    <li>VANISH: 2000</li>
-    <li>KI RESTORE: 2657</li>
-    <li>CRITICAL: 1551</li>
-  </ul>
-  
-<div class="stats-box">
-  <h2>MAIN ABILITY</h2>
-  <p>My might will be unrivaled...
+
+  <div class="tags">
+    <div class="tag">Saiyan</div>
+    <div class="tag">Future</div>
+    <div class="tag">God Ki</div>
+    <div class="tag">Super Saiyan Rosé</div>
+    <div class="tag">Powerful Opponent</div>
+    <div class="tag">Male</div>
+    <div class="tag">Melee Type</div>
+    <div class="tag">GRN</div>
+    <div class="tag">Trunks Saga (S)</div>
+    <div class="tag">Goku Black</div>
+    <div class="tag">Strike Back Assault</div>
+    <div class="tag">Armored</div>
+    <div class="tag">Strike Arts</div>
+    <div class="tag">Ultimate Arts</div>
+    <div class="tag">Special Cover Change (Strike)</div>
+    <div class="tag">Special Cover Change Nullification</div>
+    <div class="tag">Unfavorable Element Factor Nullification</div>
+    <div class="tag">Unique Gauge</div>
+  </div>
+
+  <div class="stats">
+
+    <div class="stat-group">
+      <h2>Stats</h2>
+      <div>POWER: 10.32K</div>
+      <div>HEALTH: 26.53K</div>
+      <div>STRIKE ATK: 2.7K</div>
+      <div>STRIKE DEF: 1.62K</div> 
+      <div>BLAST ATK: 2.51K</div>
+      <div>BLAST DEF: 1.66K</div>
+      <div>SLICE: 99</div>
+      <div>PIERCE: 100</div>
+      <div>IMPACT: 103</div>
+      <div>EXPLODE: 98</div>
+      <div>VANISH: 2000</div>
+      <div>KI RESTORE: 2657</div>
+      <div>CRITICAL: 1551</div>
+    </div>
+
+    <div class="stat-group">
+      <h2>Abilities</h2>
+      <div>My might will be unrivaled...
 Draw the Ultimate Arts Card "Dancing Slash of Heavenly Annihilation" next.
 Restores own health by 30% and Ki by 40.
 Cancels own Attribute Downgrades.
 Nullifies own unfavorable Element factors for 20 timer counts.
 Inflicts all enemies with Attribute Downgrade "-30% to Health Restoration" for 30 timer counts.
 
-Requirements: 25 timer counts must elapse.</p>
-
-<div class="stats-box">
-  <h2>ULTRA ABILITY</h2>
-  <p>Resonance of Force (Future)
+Requirements: 25 timer counts must elapse.</div>
+      <div>Resonance of Force (Future)
 If this character is the Leader, applies the following effects to self when battle starts:
 
 +30% to damage inflicted (cannot be cancelled).
@@ -159,10 +137,8 @@ If this character is not the Leader, applies the following effects to self per "
 +5% to damage inflicted (cannot be cancelled).
 +5% to Ki Recovery (cannot be cancelled).
 
-*Up to 3 support members will be counted.</p>
-
-  <h2>UNIQUE ABILITY</h2>
-  <p>Unfathomable Rage Against All Creation
+*Up to 3 support members will be counted.</div>  
+      <div>Unfathomable Rage Against All Creation
 The following effects occur when battle starts:
 
 +120% to damage inflicted (cannot be cancelled).
@@ -221,8 +197,12 @@ The following effects occur after enemy attack is over:
 +20% to damage inflicted for 15 timer counts.
 +30% to the next Strike Arts damage inflicted (cannot be stacked).
 Reduces enemy Ki by 20.
-Reduces enemy's Dragon Balls by 1 (activates twice).</p>
+Reduces enemy's Dragon Balls by 1 (activates twice).</div>
+    </div>
+
+  </div>
+  
+</div>
 
 </body>
-
 </html>
