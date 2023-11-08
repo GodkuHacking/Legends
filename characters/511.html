@@ -3,83 +3,250 @@
 
 <head>
   <title>Hit</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="charas/511.png">
+  
+  <style>
+    body {
+      background-color: #1c1c1c;
+      color: #ddd;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1,
+    h2 {
+      color: #ff7f27;
+      text-align: center;
+    }
+
+    .char-banner {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .char-banner img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px #000;
+    }
+
+.char-banner {
+  position: relative;
+}
+
+.rarity {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 120px; 
+}
+
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 10px 0;
+      justify-content: center;
+    }
+
+    .tag {
+      background-color: #333;
+      border-radius: 20px;
+      color: #ddd;
+      padding: 8px 15px;
+      margin: 5px;
+    }
+
+
+.stat-group {
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #333;
+}
+
+.stat-group h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.stat-group div {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.stats, 
+.abilities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.stat-group,
+.ability {
+  flex: 1 1 45%;
+  max-width: 300px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  background: #333; 
+}
+
+.stat-group h2,
+.ability h2 {
+  text-align: center; 
+  margin-bottom: 10px;
+}
+    
+    .stats {
+      display: flex;
+      justify-content: space-between; /* Added */
+    }
+    .stat-group {
+      width: 45%; /* Updated */
+    }
+    .stat-group:first-child {
+      margin-right: 20px; /* Added */
+    }
+    .stat-group:nth-child(2) { /* Added */
+      margin-left: 20px;
+    }
+
+</style>
+  
 </head>
 
 <body>
 
-  <div class="chara_banner">
-  <h1>Hit</h1>
-    <img src="https://nah3ohdioj7ye3sh.dblgnds.channel.or.jp/information/en/img/common/rarity_3.png" alt="Rarity 3"
-      style="position: absolute; bottom: 10px; right: 10px; width: 120px; height: 40px; z-index: 1;">
-    <img src="https://i.imgur.com/F4eruvA.png" alt="Banner Image" style="width: 100%; height: auto;">
+  <div class="container">
+
+    <h1>Super Saiyan Rosé Goku Black</h1>
+
+    <div class="char-banner">
+      <img src="https://i.imgur.com/1nl9kQn.png" alt="Super Saiyan Rosé Goku Black">
+      <img class="rarity" src="rarity_3.png"
+        alt="Rarity 3">
+    </div>
+
+  <div class="tags">
+    <div class="tag">Universe 6</div>
+    <div class="tag">Powerful Opponent</div>
+    <div class="tag">Rival Universe</div>
+    <div class="tag">Universe Rep</div>
+    <div class="tag">Male</div>
+    <div class="tag">ULTRA</div>
+    <div class="tag">Melee Type</div>
+    <div class="tag">RED</div>
+    <div class="tag">God of Destruction Champa Saga (S)</div>
+    <div class="tag">Hit</div>
+    <div class="tag">Attack UP (BLU)</div>
+    <div class="tag">Ultimate Arts</div>
+    <div class="tag">Special Cover Change (Strike/Blast)</div>
+    <div class="tag">Special Cover Change Nullification</div>
+    <div class="tag">Unique Gauge</div>
+    <div class="tag">Time Skip</div>
   </div>
 
-  <h2>TAGS</h2>
-  <ul>
-    <li>Universe 6</li>
-    <li>Powerful Opponent</li>
-    <li>Rival Universe</li>
-    <li>Universe Rep</li>
-    <li>Male</li>
-    <li>RED</li>
-    <li>God of Destruction Champa Saga (S)</li>
-    <li>Hit</li>
-    <li>Attack UP (BLU)</li>
-    <li>Ultimate Arts</li>
-    <li>Special Cover Change (Strike/Blast)</li>
-    <li>Special Cover Change Nullification</li>
-    <li>Unique Gauge</li>
-    <li>Time Skip</li>
-  </ul>
+    <div class="stats">
 
-  <h2>STATS</h2>
-  <ul>
-    <li>POWER: 10.36K</li>
-    <li>HEALTH: 26.54K</li>
-    <li>STRIKE ATK: 2.73K</li>
-    <li>STRIKE DEF: 1.66K</li>
-    <li>BLAST ATK: 2.44K</li>
-    <li>BLAST DEF: 1.7K</li>
-    <li>SLICE: 98</li>
-    <li>PIERCE: 102</li>
-    <li>IMPACT: 100</li>
-    <li>EXPLODE: 100</li>
-    <li>VANISH: 2000</li>
-    <li>KI RESTORE: 2608</li>
-    <li>CRITICAL: 1484</li>
-  </ul>
+<div class="stat-group">
 
-  <h2>MAIN ABILITY</h2>
-  <p>Try all you like, it won't work. (Main Ability details)</p>
+  <h2>Stats</h2>
+  </div>
+    <ul>
+      <li>Base HP: 26535</li>
+      <li>Base Strike Attack: 2729</li>
+      <li>Base Strike Defense: 1664</li>
+      <li>Base Blast Attack: 2438</li>
+      <li>Base Blast Defense: 1697</li>
+    </ul>
+    <ul>
+      <li>Pierce Resist: 102</li>
+      <li>Slice Resist: 98</li>
+      <li>Impact Resist: 100</li>
+      <li>Explode Resist: 100</li>
+      <li>Critical Chance: 14.84%</li>
+      <li>Ki Recovery: 26.08%</li>
+      <li>Vanish Recovery: 20.00%</li>
+    </ul>
+  </div>
+      
+<div class="stat-group">
 
-  <h2>ULTRA ABILITY</h2>
-  <p>Resonance of Force (Universe Rep) (Ultra Ability details)</p>
+  <h2>Cards</h2>
 
-  <h2>UNIQUE ABILITY</h2>
-  <p>Growth Through Battle (Unique Ability details)</p>
+  <div><b>Strike Arts Card</b></div>
+  <div><b>Strike (Restore Ki)</b></div>
+  <div><b>Strike (Impact)</b></div>
+  <div>Restores own Ki by 5 on hit.</div>
+  
+  <div>* * *</div>
 
-  <h2>STRIKE</h2>
-  <p>Strike (Restore Ki) (Strike details)</p>
+  <div><b>Blast Arts Card</b></div>
+  <div><b>Blast</b></div>
+  <div><b>Blast (Impact)</b></div>
+  
+  <div>* * *</div>
 
-  <h2>SHOT</h2>
-  <p>Blast (Shot details)</p>
+  <div><b>Extra Arts Card</b></div>
+  <div><b>Ready to Evolve</b></div>
+  <div>[If Unique Gauge is full]</div>
+  <div>Activates a Time Skip attack that targets the entire battlefield.</div>
+  <!-- More details -->
 
-  <h2>SPECIAL MOVE</h2>
-  <p>Assassin Flash (Special Move details)</p>
+  <div>* * *</div>
 
-  <h2>SPECIAL SKILL</h2>
-  <p>Ready to Evolve (Special Skill details)</p>
+  <div><b>Special Arts Card</b></div>
+  <div><b>Assassin Flash</b></div>
+  <div>Deals massive Impact damage.</div>
+  <div>The following effects occur upon activation:</div>
+  <!-- More details -->
 
-  <h2>ULTIMATE SKILL</h2>
-  <p>Time Skip/Molotov (Ultimate Skill details)</p>
+  <div>* * *</div>
 
-  <h2>ART CARDS HELD</h2>
-  <p>Art cards details</p>
+  <div><b>Ultimate Arts Card</b></div>
+  <div><b>Time Skip/Molotov</b></div>
+  <div>Deals supreme Impact damage.</div>
+  <div>Applies the following effects to self upon activation:</div>
+  <!-- More details -->
 
-  <h2>TOURNAMENT OF POWER ABILITY</h2>
-  <p>Tournament of Power ability details</p>
+</div>
+
+      
+  <div class="abilities">
+
+    <div class="ability">
+      <h2>Abilities</h2>
+      <div>Try all you like, it won't work.
+Draw the Ultimate Arts Card "Time Skip/Molotov" next.
+Restores own health by 20% and Ki by 50.
++40% to Ultimate damage inflicted for 20 timer counts.
++15% to Critical damage for 40 timer counts.
+Shortens allies' substitution counts by 5.
+        
+      <div>Resonance of Force (Universe Rep)
+If this character is the Leader, applies the following effects to self when battle starts:
+
++30% to damage inflicted (cannot be cancelled).
++30% to Ki Recovery (cannot be cancelled).
+
+If this character is not the Leader, applies the following effects to self per "Tag: Universe Rep" battle/support member when battle starts:
+
++5% to damage inflicted (cannot be cancelled).
++5% to Ki Recovery (cannot be cancelled).
+
+*Up to 3 support members will be counted.</div>
+    </div>
+
+  </div>
+  
+</div>
 
 </body>
-
 </html>
