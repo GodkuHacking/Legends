@@ -1,225 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Character Page | Legends Hub</title>
-
   <link rel="icon" href="https://dblegends.net/assets/card_icons/BChaIco_0573_GogetaSS1_573.webp">
-  
-  <!-- CSS from paste.txt -->
-  <style>
-  .index {
-      flex: 1;
-      margin-top: 5px;
-  
-  }
-  .bgimage {
-      background-color: #16171c;
-  }
-  .pager {
-      flex: 1;
-      padding-left: 10px;
-      padding-right: -500px;
-      margin-left: 0px;
-      margin-right: 20px;
-      margin-top: 25px;
-  }
-  
-  .main {
-      max-width: 95rem;
-      margin: auto;
-  
-  }
-  
-  .navbar {
-      margin-bottom: 35px;
-  }
-  .nav-tabs{
-      --bs-nav-tabs-border-color: none;
-  }
-  
-  table{
-      border:none;
-  }
-  td{
-      font-size: 15px;
-      padding-bottom:10px;
-  }
-  th{
-      padding-bottom:10px;
-  }
-  tr{
-      width: 100%;
-      --bs-border-color:  #575757;
-  }
-  
-  #footer {
-      position:absolute;
-      bottom:0;
-      width:100%;
-  }
-  
-  a {
-      color:#fff;
-      text-decoration: none !important;
-      padding: 0;
-      margin: 0;
-  }
-  a:hover{
-      color: #d8d8d8;
-  }
-  
-  body {
-      color: #fff;
-      font-family: BarlowCondensed-Medium;
-      background-color: #23252a;
-      display: flex;
-      min-height: 100vh;
-      flex-direction: column;
-  
-  }
-  
-  .container {
-      max-width: 1200px;
-  }
-  
-  .card {
-      max-width: 100%;
-      background-color: transparent;
-  }
-  
-  .card-body{
-      background-color: #32383e;
-      width: 100%;
-      min-width: 100%;
-  }
-  .card-header {
-      background-color: #1a1b1f;
-  }
-  
-  .card-group{
-      align-content: center;
-  }
-  
-  .btn {
-      border:0;
-      color: #fff;
-      background-color: #313131;
-  }
-  
-  .border-dark{
-      border: 0;
-  }
-  
-  .version{
-      font-size: calc(0.55rem + 0.5vw);
-      color: #fff;
-  }
-  
-  .version-footer{
-      font-size: calc(0.15rem + 0.75vw);
-  }
-  
-  /* More CSS from paste.txt */
-  
-  </style>
+  <link rel="stylesheet" href="css/styles.css">
 
-  <!-- CSS from paste-2.txt -->
   <style>
     body {
-        font-family: 'Arial', sans-serif;
-        background-color: #222;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 20px;
-        margin: 0;
-        font-size: 18px;
+      font-family: 'Arial', sans-serif;
+      background-color: #222;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 20px;
+      margin: 0;
+      font-size: 18px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
-    a {
-        text-decoration: none;
-        color: #f2f2f2;
+    .widget {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+      animation: fadeInDown 1s ease-in-out;
     }
 
-    a:hover,
-    a:active {
-        color: #8ED1FC;
+    .widget a {
+      text-decoration: none;
+      color: #f2f2f2;
+      padding: 10px 20px;
+      border: 2px solid #444;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .widget a:hover {
+      background-color: #444;
     }
 
     .character-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
     }
 
     .character {
-        position: relative;
-        margin: 20px;
-        padding: 20px;
-        width: 250px;
-        background-color: #333;
-        border-radius: 10px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-        transition: transform 0.3s;
+      position: relative;
+      margin: 20px;
+      padding: 20px;
+      width: 250px;
+      background-color: #333;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s;
+      animation: fadeInUp 1s ease-in-out;
     }
 
     .character:hover {
-        transform: scale(1.1);
+      transform: scale(1.1);
     }
 
     .character a {
-        text-decoration: none;
-        color: #f2f2f2;
-        display: block;
+      text-decoration: none;
+      color: #f2f2f2;
+      display: block;
     }
 
     .character img {
-        width: 180px;
-        height: 180px;
-        object-fit: cover;
-        border-radius: 50%;
-        margin-bottom: 20px;
-        border: 5px solid #222;
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 5px solid #222;
     }
 
     .character-name {
-        font-weight: bold;
-        position: relative;
-        z-index: 1;
-        font-size: 24px;
-        margin-bottom: 10px;
+      font-weight: bold;
+      position: relative;
+      z-index: 1;
+      font-size: 24px;
+      margin-bottom: 10px;
     }
 
     .fade-transition {
+      opacity: 1;
+      transition: opacity 0.5s;
+    }
+
+    @keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      100% {
         opacity: 1;
-        transition: opacity 0.5s;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
-
-  <!-- CSS from paste-3.txt -->
-  <style>
-  .nounderline {
-      text-decoration: none !important
-  }
-
-  a {
-      text-decoration: none !important;
-  }
-  a:hover {
-      text-decoration: none;
-      background-color: transparent;
-      color: inherit;
-  }
-
-  /* More CSS from paste-3.txt */
-
-  </style>
-
-  <!-- Link to the CSS file -->
-  <link rel="stylesheet" href="css/styles.css">
-
 </head>
+
+<body>
+  <div class="widget">
+    <a href="#banners">Banners</a>
+    <a href="#news">News</a>
+    <a href="#items">Items</a>
+    <a href="#characters">Characters</a>
+    <a href="#equips">Equips</a>
+  </div>
 
 <!-- Body content from paste-2.txt -->
 <body>
